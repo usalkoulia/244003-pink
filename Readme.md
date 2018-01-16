@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Юлия Усалко](https://up.htmlacademy.ru/adaptive/13/user/244003).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей "firefoxic" Артёмов](https://htmlacademy.ru/profile/firefoxic).
 
 ---
 
