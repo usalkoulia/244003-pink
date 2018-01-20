@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Страница конкурса приложения Pink</title>
+  </head>
+  <body>
+    <header class="header">
+      <a class="header__logo-link" href="#">
+        <img class="header__logo-image" src="img/logo.png" alt="Логотип приложения Pink" width="100" height="100">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list ">
+            <li class="main-nav__item">
+              <a href="#">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">HTML academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-form">
+
+      <section class="hero">
+        <h1 class="hero__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+        <p class="hero__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+      </section>
+
+      <form class="competition-form" action="https://echo.htmlacademy.ru" method="post">
+
+        <div class="competition-form__fieldset competition-form__fieldset--white">
+          <label class="competition-form__label competition-form__label--white">Фамилия:
+            <input class="competition-form__input" type="text" name="name" placeholder="Укажите фамилию *">
+          </label>
+          <label class="competition-form__label competition-form__label--white">Имя:
+            <input class="competition-form__input" type="text" name="surname" placeholder="Введите ваше имя *">
+          </label>
+          <label class="competition-form__label competition-form__label--white">Отчество:
+            <input class="competition-form__input" type="text" name="patronymic" placeholder="Ну и отчество тоже">
+          </label>
+        </div>
+
+        <div class="competition-form__fieldset competition-form__fieldset--grey">
+          <h2 class="competition-form__title">Ваши безбашенные достижения в путешествии</h2>
+          <label class="competition-form__checkbox-label competition-form__label--grey">
+            <input class="competition-form__checkbox" type="checkbox" name="selfie" checked>
+            Сделал селфи с акулой
+          </label>
+          <label class="competition-form__checkbox-label competition-form__label--grey">
+            <input class="competition-form__checkbox" type="checkbox" name="beach" checked>
+            Обгорел на пляже
+          </label>
+          <label class="competition-form__checkbox-label competition-form__label--grey">
+            <input class="competition-form__checkbox" type="checkbox" name="chuck">
+            Видел Чака Норриса
+          </label>
+          <label class="competition-form__checkbox-label competition-form__label--grey">
+            <input class="competition-form__checkbox" type="checkbox" name="suveniers">
+            Накупил сувениров
+          </label>
+          <label class="competition-form__checkbox-label competition-form__label--grey">
+            <input class="competition-form__checkbox" type="checkbox" name="tower" checked>
+            Удержал башню
+          </label>
+          <label class="competition-form__checkbox-label competition-form__label--grey">
+            <input class="competition-form__checkbox" type="checkbox" name="hotel">
+            Разгромил отель
+          </label>
+        </div>
+
+        <div class="competition-form__fieldset competition-form__fieldset--white">
+          <label class="competition-form__label competition-form__label--white">Номер телефона:
+            <input class="competition-form__input" type="text" name="phone-number" placeholder="Номер, пожалуйста">
+          </label>
+          <label class="competition-form__label competition-form__label--white">Адрес почты:
+            <input class="competition-form__input" type="email" name="email" placeholder="Введите почту *">
+          </label>
+        </div>
+
+        <div class="competition-form__fieldset competition-form__fieldset--grey">
+          <h2 class="competition-form__title">С каким приложением путешествовали?</h2>
+          <label class="competition-form__checkbox-label competition-form__label--grey">
+            <input class="competition-form__radio" type="radio" name="radio" value="iOS" checked>
+            Pink для iOS
+          </label>
+          <label class="competition-form__checkbox-label competition-form__label--grey">
+            <input class="competition-form__radio" type="radio" name="radio" value="Android">
+            Pink на Android
+          </label>
+          <label class="competition-form__checkbox-label competition-form__label--grey">
+            <input class="competition-form__radio" type="radio" name="radio" value="Windows">
+            Windows Phone
+          </label>
+        </div>
+
+        <div class="competition-form__fieldset competition-form__fieldset--white">
+          <h2 class="competition-form__title">Опишите свои эмоции</h2>
+          <textarea class="competition-form__textarea" name="name" rows="8" cols="80" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        </div>
+
+        <div class="competition-form__submit-wrapper">
+          <input class="competition-form__submit-button" type="submit" name="competition-submit" value="Отправить форму">
+        </div>
+
+        <p class="competition-form__legend"><sup>*</sup> — обязательные поля</p>
+      </form>
+    </main>
+
+    <footer class="inner-footer">
+      <div class="inner-footer__wrapper">
+        <div class="inner-footer__logo logo">
+          <a class="logo__link" href="#">
+            <img class="logo__image" src="img/glasses-logo.png" alt="Логотип приложения Pink" width="200" height="100">
+          </a>
+        </div>
+        <div class="inner-footer__social social">
+          <ul class="social__list">
+            <li class="social__item"><a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">Pink в Твиттере</a></li>
+            <li class="social__item"><a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Pink в Фейсбуке</a></li>
+            <li class="social__item"><a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Pink в Ютубе</a></li>
+          </ul>
+        </div>
+        <div class="inner-footer__copyright copyright">
+          <p class="copyright__text">Разработано</p>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML academy</a>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>
