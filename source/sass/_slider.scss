@@ -1,0 +1,14 @@
+@import "variables";
+
+.slider__item {
+  display: none;
+}
+
+.slider__item--active {
+  display: block;
+}
+
+.slider__toggles {
+  padding: 40px 20px 45px 20px;
+  text-align: center;
+}

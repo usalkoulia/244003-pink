@@ -1,0 +1,23 @@
+@import "variables";
+
+.button {
+  font-family: $main-font;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  border: #ffffff solid 3px;
+  border-radius: 35px;
+  height: 55px;
+  display: block;
+  box-sizing: border-box;
+  background-color: transparent;
+  line-height: 47px;
+
+
+  cursor: pointer;
+}
+
+.button--download {
+  color: #ffffff;
+}

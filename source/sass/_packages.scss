@@ -1,0 +1,24 @@
+@import "variables";
+
+.packages {
+  background-color: $main-color-grey;
+  padding: 20px;
+}
+
+.packages__item {
+  width: 100%;
+  margin: 0;
+}
+
+.packages__heading {
+  background-color: #283645;
+  color: #ffffff;
+  font-family: $main-font;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.packages__price {
+  font-size: 24px;
+  font-weight: 300;
+}

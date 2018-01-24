@@ -1,0 +1,29 @@
+@import "variables";
+
+.review {
+  background-color: #ffffff;
+  font-family: $main-font;
+}
+
+.reviews__wrapper {
+  text-align: center;
+}
+
+.reviews__item {
+  margin: 0;
+  padding: 20px;
+}
+
+.reviews__author {
+  font-family: $main-font;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.reviews__text {
+  font-family: $main-font;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 24px;
+}
