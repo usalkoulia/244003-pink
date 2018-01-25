@@ -22,12 +22,28 @@
 }
 
 .button--submit {
-  color: $primary-color;
-  border-color: $primary-color;
+  color: $secondary-color;
+  border-color: $secondary-color;
 }
 
 .button--cancel {
   border-color: #000000;
   color: #000000;
   opacity: 0.1;
+}
+
+.square-button {
+  font-family: $main-font;
+  background-color: #2aab6d;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+  text-transform: uppercase;
+  border-radius: 3px;
+  width: 280px;
+  height: 63px;
+  padding: 0;
+  cursor: pointer;
 }
