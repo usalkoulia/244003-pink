@@ -1,0 +1,33 @@
+@import "variables";
+
+.post {
+  background-color: $bg-color;
+  font-family: $main-font;
+}
+
+.post__author {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.post__time {
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.post__content {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.post__like {
+  font-size: 12px;
+  color: $primary-color;
+  text-transform: uppercase;
+}
+
+.post__image--wide {
+  margin-left: -20px;
+  margin-right: -20px;
+}

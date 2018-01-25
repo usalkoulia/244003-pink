@@ -1,0 +1,21 @@
+@import "variables";
+
+.editor__text {
+  font-family: $main-font;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.editor__form {
+  background-color: $bg-color;
+  padding: 20px;
+}
+
+.editor__image {
+  margin-bottom: 40px;
+}
+
+.editor__button:first-of-type {
+  margin-bottom: 12px;
+}

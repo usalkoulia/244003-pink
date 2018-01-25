@@ -9,15 +9,25 @@
   border: #ffffff solid 3px;
   border-radius: 35px;
   height: 55px;
+  width: 280px;
   display: block;
   box-sizing: border-box;
   background-color: transparent;
   line-height: 47px;
-
-
   cursor: pointer;
 }
 
 .button--download {
   color: #ffffff;
+}
+
+.button--submit {
+  color: $primary-color;
+  border-color: $primary-color;
+}
+
+.button--cancel {
+  border-color: #000000;
+  color: #000000;
+  opacity: 0.1;
 }

@@ -3,18 +3,26 @@
 @import "buttons";
 @import "header";
 @import "main-navigation";
+@import "hero";
 @import "download";
 @import "advantages";
 @import "reviews";
 @import "slider";
 @import "packages";
+@import "gallery";
+@import "post";
+@import "editor";
+@import "competition";
 @import "main-footer";
+@import "inner-footer";
+@import "social";
 
 body {
   padding: 0;
   margin: 0;
 }
 
+/*Временное правило, чтоб цвет ссылок не выедал глаза*/
 a {
   color: #ffffff;
 }
