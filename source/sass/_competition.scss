@@ -77,30 +77,10 @@
   }
 }
 
-@mixin placeholder {
-  &::-webkit-input-placeholder {
-    @content;
-  }
-
-  &:-moz-placeholder {
-    @content;
-  }
-
-  &::-moz-placeholder {
-    @content;
-  }
-
-  &:-ms-input-placeholder {
-    @content;
-  }
-}
-
-.competition-form__input,
-.competition-form__textarea {
-  @include placeholder {
-    font-family: $main-font;
-    color: $primary-color;
-    font-size: 18px;
-    line-height: 30px;
-  }
+.competition-form__input::placeholder,
+.competition-form__textarea::placeholder {
+  font-family: $main-font;
+  color: $primary-color;
+  font-size: 18px;
+  line-height: 30px;
 }

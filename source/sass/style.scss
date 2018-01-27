@@ -1,8 +1,10 @@
 @import "fonts";
 @import "variables";
 @import "buttons";
+@import "square-button";
 @import "header";
 @import "main-navigation";
+@import "link";
 @import "promo-text";
 @import "hero";
 @import "download";
@@ -16,17 +18,13 @@
 @import "competition";
 @import "main-footer";
 @import "inner-footer";
+@import "copyright";
 @import "social";
 @import "popup";
 
 body {
   padding: 0;
   margin: 0;
-}
-
-/*Временное правило, чтоб цвет ссылок не выедал глаза*/
-a {
-  color: #ffffff;
 }
 
 .visually-hidden {
