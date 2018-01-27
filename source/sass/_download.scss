@@ -13,6 +13,11 @@
   padding: 30px 20px;
 }
 
+.download__slogan {
+  display: none;
+}
+
+
 .download__list {
   list-style-type: none;
 }
@@ -22,4 +27,35 @@
   font-weight: 300;
   color: #ffffff;
   text-align: center;
+}
+
+@media (min-width: 660px) {
+  .download__wrapper {
+    background-color: transparent;
+    width: 45%;
+    position: relative;
+    top: 174px;
+  }
+
+  .download {
+    background: url("../img/iphone-hand-mobile@1x.png") no-repeat 190px 185px,
+      url("../img/bg-back-mobile@1x.jpg") no-repeat center top;
+    min-height: 730px;
+    padding-top: 0;
+    background-size: 450px, 100%;
+  }
+
+  .download__slogan {
+    font-family: $main-font;
+    font-size: 40px;
+    font-weight: 300;
+    color: #ffffff;
+    display: block;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    line-height: 49px;
+    margin: 0;
+    margin-bottom: 29px;
+  }
 }

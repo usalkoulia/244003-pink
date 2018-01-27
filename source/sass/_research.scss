@@ -1,0 +1,32 @@
+.research {
+  display: none;
+}
+
+@media (min-width: $tablet-min-width) {
+  .research {
+    display: block;
+    padding: 20px;
+    padding-left: 50%;
+    padding-right: 30px;
+    margin-bottom: 50px;
+  }
+
+  .research__title {
+    font-family: $main-font;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: bold;
+  }
+
+  .research__text {
+    font-family: $main-font;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .research__link {
+    font-family: $main-font;
+    font-size: 14px;
+    color: $secondary-color;
+  }
+}

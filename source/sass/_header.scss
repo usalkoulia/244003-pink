@@ -8,3 +8,9 @@
   right: 0;
   left: 0;
 }
+
+@media (min-width: 660px) {
+  .header {
+    padding: 45px;
+  }
+}
