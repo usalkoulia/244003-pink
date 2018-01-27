@@ -1,0 +1,86 @@
+@import "variables";
+
+.competition-form {
+  color: $primary-color;
+  font-family: $main-font;
+}
+
+.competition-form__text {
+  padding: 20px;
+  margin: 0;
+}
+
+.competition-form__fieldset {
+  padding: 20px;
+}
+
+.competition-form__label {
+  font-size: 14px;
+
+  &--white {
+    color: $secondary-color;
+    text-transform: uppercase;
+  }
+
+  &--grey {
+    display: block;
+    font-size: 18px;
+  }
+}
+
+.competition-form__title {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: $secondary-color;
+  font-weight: normal;
+  text-align: center;
+}
+
+.competition-form__fieldset--grey {
+  background-color: $bg-color;
+}
+
+.competition-form__input {
+  display: block;
+  border: 2px solid rgba(#000000, 0.1);
+  border-radius: 3px;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: $main-font;
+  font-size: 18px;
+  color: $primary-color;
+}
+
+.competition-form__textarea {
+  width: 100%;
+  height: 200px;
+  font-family: $main-font;
+  color: $primary-color;
+  font-size: 18px;
+  line-height: 30px;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 2px solid rgba(#000000, 0.1);
+  border-radius: 3px;
+}
+
+.competition-form__submit-wrapper {
+  padding: 20px;
+}
+
+.competition-form__legend {
+  text-transform: uppercase;
+  text-align: center;
+
+  sup {
+    color: $secondary-color;
+  }
+}
+
+.competition-form__input::placeholder,
+.competition-form__textarea::placeholder {
+  font-family: $main-font;
+  color: $primary-color;
+  font-size: 18px;
+  line-height: 30px;
+}

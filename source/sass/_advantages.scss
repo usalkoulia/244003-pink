@@ -1,0 +1,39 @@
+@import "variables";
+
+.advantages {
+  text-align: center;
+  color: $primary-color;
+}
+
+.advantages__slogan-wrapper {
+  padding: 20px;
+}
+
+.advantages__slogan {
+  font-family: $main-font;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.advantages__list {
+  background: url("../img/iphone-screen-mobile@1x.png") no-repeat center 435px;
+  background-color: $bg-color;
+  list-style-type: none;
+  margin: 0;
+  padding: 20px;
+  padding-bottom: 260px;
+}
+
+.advantages__title {
+  font-family: $main-font;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.advantages__description {
+  font-family: $main-font;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 24px;
+}

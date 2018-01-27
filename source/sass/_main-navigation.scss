@@ -1,0 +1,19 @@
+@import "variables";
+
+.main-nav {
+  background-color: #283645;
+  display: none;
+}
+
+.main-nav__item {
+  font-family: $main-font;
+  font-size: 18px;
+  font-weight: bold;
+  list-style-type: none;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.main-nav__link {
+  display: block;
+}
