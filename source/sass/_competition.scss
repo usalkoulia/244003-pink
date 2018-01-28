@@ -84,3 +84,99 @@
   font-size: 18px;
   line-height: 30px;
 }
+
+@media (min-width: $tablet-min-width) {
+  .competition-form__fieldsets {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .competition-form__fieldset {
+    margin-bottom: 50px;
+  }
+
+  .competition-form__text {
+    min-height: 200px;
+  }
+
+  .competition-form__label {
+    display: flex;
+    margin-bottom: 50px;
+  }
+
+  .competition-form__input {
+    flex-grow: 1;
+  }
+
+  .competition-form__label--reversed {
+    flex-direction: column-reverse;
+  }
+
+  .competition-form__fieldset--grey {
+    background-color: #ffffff;
+  }
+
+  .competition-form__fieldset:nth-of-type(1) {
+    order: 1;
+  }
+
+  .competition-form__fieldset:nth-of-type(2) {
+    order: 4;
+  }
+
+  .competition-form__fieldset:nth-of-type(3) {
+    order: 3;
+  }
+
+  .competition-form__fieldset:nth-of-type(4) {
+    order: 2;
+  }
+
+  .competition-form__fieldset:nth-of-type(5) {
+    order: 5;
+  }
+
+  .competition-form__fieldset--bordered {
+    border: 2px solid rgba(#000000, 0.1);
+  }
+
+  .competition-form__submit-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .competition-form__fieldsets {
+    @include desktop-centering;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .competition-form__fieldset {
+    width: 100%;
+  }
+
+  .competition-form__fieldset:nth-of-type(1),
+  .competition-form__fieldset:nth-of-type(4) {
+    width: 45%;
+  }
+
+  .competition-form__fieldset--checkboxes {
+    display: flex;
+    flex-wrap: wrap;
+
+    .competition-form__title {
+      width: 100%;
+    }
+
+    .competition-form__label {
+      width: 30%;
+    }
+  }
+
+  .competition-form__submit-wrapper {
+    @include desktop-centering;
+  }
+}
