@@ -1,8 +1,13 @@
-@import "variables";
-
 .promo-text {
   font-family: $main-font;
   font-size: 14px;
   line-height: 30px;
   text-align: center;
+}
+
+@media (min-width: $tablet-min-width) {
+  .promo-text {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }

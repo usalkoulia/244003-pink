@@ -3,8 +3,12 @@
 .hero {
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
   height: 200px;
   padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero__title {
@@ -14,7 +18,14 @@
   color: #ffffff;
   text-align: center;
   margin: 0;
-  position: absolute;
-  top: 93px;
-  left: 5px;
+}
+
+@media (min-width: $tablet-min-width) {
+  .hero {
+    height: 400px;
+  }
+
+  .hero__title {
+    font-size: 50px;
+  }
 }

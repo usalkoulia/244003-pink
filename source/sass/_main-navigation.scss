@@ -2,6 +2,7 @@
 
 .main-nav {
   background-color: #283645;
+  display: none;
 }
 
 .main-nav__item {
@@ -18,6 +19,10 @@
 }
 
 @media (min-width: $desktop-min-width) {
+  .main-nav {
+    display: block;
+  }
+
   .main-nav__list {
     display: flex;
   }
