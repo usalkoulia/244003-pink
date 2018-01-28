@@ -6,12 +6,15 @@
   color: $primary-color;
 }
 
-.packages__item {
-  width: 100%;
-  margin: 0;
+.packages__table {
+  width: 280px * 3;
 }
 
-.packages__heading {
+.packages__cell {
+  width: 280px;
+}
+
+.packages__cell--heading {
   background-color: #283645;
   color: #ffffff;
   font-family: $main-font;
@@ -22,4 +25,30 @@
 .packages__price {
   font-size: 24px;
   font-weight: 300;
+}
+
+.packages__row .packages__cell:first-child {
+  display: none;
+}
+
+@media (min-width: $tablet-min-width) {
+  .packages__table {
+    width: 100%;
+  }
+
+  .packages__cell {
+    width: auto;
+  }
+
+  .packages__cell-text {
+    display: none;
+  }
+
+  .packages__row .packages__cell:first-child {
+    display: block;
+  }
+
+  .packages__toggles {
+    display: none;
+  }
 }
