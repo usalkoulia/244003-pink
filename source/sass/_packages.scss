@@ -52,3 +52,9 @@
     display: none;
   }
 }
+
+@media (min-width: $desktop-min-width) {
+  .packages__wrapper {
+    @include desktop-centering;
+  }
+}

@@ -1,3 +1,23 @@
 .footer {
   padding: 20px;
 }
+
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-min-width) {
+  .footer__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .footer {
+    @include desktop-centering;
+  }
+
+
+}

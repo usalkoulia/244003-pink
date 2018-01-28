@@ -30,3 +30,16 @@
     color: $secondary-color;
   }
 }
+
+@media (min-width: $desktop-min-width) {
+  .research {
+    background-color: $bg-color;
+    padding: 0;
+  }
+
+  .research__centering {
+    @include desktop-centering;
+    padding-left: 325px;
+    padding-right: 100px;
+  }
+}

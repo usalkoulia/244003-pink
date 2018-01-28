@@ -9,8 +9,24 @@
   left: 0;
 }
 
-@media (min-width: 660px) {
+@media (min-width: $tablet-min-width) {
   .header {
     padding: 45px;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .header {
+    padding: 27px;
+  }
+
+  .header__menu-toggle {
+    display: none;
+  }
+
+  .header__centering {
+    @include desktop-centering;
+    display: flex;
+    justify-content: space-between;
   }
 }

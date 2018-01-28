@@ -34,6 +34,10 @@
   color: $primary-color;
 }
 
+.reviews__arrows {
+  display: none;
+}
+
 @media (min-width: $tablet-min-width) {
   .reviews__item {
     display: flex;
@@ -49,5 +53,19 @@
   .reviews__text {
     font-size: 18px;
     line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .reviews {
+    @include desktop-centering;
+  }
+
+  .reviews__arrows {
+    display: block;
+  }
+
+  .reviews__toggles {
+    display: none;
   }
 }

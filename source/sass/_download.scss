@@ -29,12 +29,12 @@
   text-align: center;
 }
 
-@media (min-width: 660px) {
+@media (min-width: $tablet-min-width) {
   .download__wrapper {
     background-color: transparent;
-    width: 45%;
     position: relative;
     top: 174px;
+    padding-right: 335px;
   }
 
   .download {
@@ -57,5 +57,12 @@
     line-height: 49px;
     margin: 0;
     margin-bottom: 29px;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .download__wrapper {
+    @include desktop-centering;
+    padding-right: 620px;
   }
 }

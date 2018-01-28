@@ -44,3 +44,14 @@
     margin: 0;
   }
 }
+
+@media (min-width: $desktop-min-width) {
+  .contacts__feedback {
+    @include desktop-centering;
+  }
+
+  .contacts__list {
+    @include desktop-centering;
+    display: flex;
+  }
+}
