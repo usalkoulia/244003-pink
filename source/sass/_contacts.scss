@@ -29,7 +29,10 @@
 }
 
 .contacts__map {
-  border: none;
+  background-image: url("../img/big-map.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 200px;
 }
 
 @media (min-width: $tablet-min-width) {
@@ -43,6 +46,10 @@
     padding: 45px;
     margin: 0;
   }
+
+  .contacts__map {
+    min-height: 380px;
+  }
 }
 
 @media (min-width: $desktop-min-width) {
@@ -53,5 +60,9 @@
   .contacts__list {
     @include desktop-centering;
     display: flex;
+  }
+
+  .contacts__map {
+    min-height: 500px;
   }
 }

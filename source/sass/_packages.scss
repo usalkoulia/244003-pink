@@ -1,9 +1,11 @@
-@import "variables";
-
 .packages {
   background-color: $bg-color;
   padding: 20px;
   color: $primary-color;
+}
+
+.packages__wrapper {
+  overflow: scroll;
 }
 
 .packages__table {
