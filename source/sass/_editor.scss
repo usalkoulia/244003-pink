@@ -1,11 +1,6 @@
-@import "variables";
-
 .editor__text {
-  font-family: $main-font;
-  font-size: 14px;
-  line-height: 30px;
-  text-align: center;
   color: $primary-color;
+  margin: 0;
 }
 
 .editor__form {
@@ -19,4 +14,59 @@
 
 .editor__button:first-of-type {
   margin-bottom: 12px;
+}
+
+.editor__ranges {
+  .editor__icon {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-min-width) {
+  .editor__text {
+    min-height: 190px;
+  }
+
+  .editor__image {
+    width: 50%;
+    margin-right: 45px;
+  }
+
+  .editor__form {
+    display: flex;
+  }
+
+  .editor__toggles {
+    display: none;
+  }
+
+  .editor__ranges {
+    .editor__icon {
+      display: block;
+    }
+  }
+
+  .editor__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .editor__range-wrapper {
+    display: flex;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .editor {
+    @include desktop-centering;
+  }
+
+  .editor__text {
+    @include desktop-centering;
+  }
+
+  .editor__button-wrapper {
+    display: flex;
+  }
 }

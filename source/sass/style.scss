@@ -1,11 +1,14 @@
 @import "fonts";
 @import "variables";
+@import "mixins";
+@import "page-index";
 @import "visually-hidden";
 @import "buttons";
 @import "square-button";
 @import "header";
 @import "main-navigation";
 @import "link";
+@import "research";
 @import "promo-text";
 @import "hero";
 @import "download";
@@ -17,8 +20,8 @@
 @import "post";
 @import "editor";
 @import "competition";
-@import "main-footer";
-@import "inner-footer";
+@import "contacts";
+@import "footer";
 @import "copyright";
 @import "social";
 @import "popup";

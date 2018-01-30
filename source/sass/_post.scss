@@ -1,8 +1,7 @@
-@import "variables";
-
 .post {
   background-color: $bg-color;
   font-family: $main-font;
+  margin-bottom: 20px;
 }
 
 .post__wrapper {
@@ -26,13 +25,58 @@
   line-height: 24px;
 }
 
+.post__like-wrapper {
+  display: flex;
+}
+
 .post__like {
   font-size: 12px;
   color: $secondary-color;
   text-transform: uppercase;
 }
 
-.post__image--wide {
+.post__image {
+  width: 100%;
+}
+
+.post--wide .post__image {
   margin-left: -20px;
   margin-right: -20px;
+  width: calc(100% + 40px);
+}
+
+@media (min-width: $tablet-min-width) {
+  .post {
+    width: calc(50% - 10px);
+  }
+
+  .post__wrapper {
+    position: relative;
+  }
+
+  .post--wide {
+    width: 100%;
+
+    .post__like-wrapper {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+
+  .post__like-wrapper {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .post {
+    width: calc(33% - 10px);
+    margin-bottom: 50px;
+  }
+
+  .post--wide {
+    width: 100%;
+  }
 }

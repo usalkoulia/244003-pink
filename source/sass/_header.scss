@@ -1,5 +1,3 @@
-@import "variables";
-
 .header {
   background-color: rgba(#283645, 0.9);
   padding: 20px;
@@ -7,4 +5,26 @@
   top: 0;
   right: 0;
   left: 0;
+}
+
+@media (min-width: $tablet-min-width) {
+  .header {
+    padding: 45px;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .header {
+    padding: 27px;
+  }
+
+  .header__menu-toggle {
+    display: none;
+  }
+
+  .header__centering {
+    @include desktop-centering;
+    display: flex;
+    justify-content: space-between;
+  }
 }

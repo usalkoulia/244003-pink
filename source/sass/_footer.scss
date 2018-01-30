@@ -1,22 +1,21 @@
-.gallery {
+.footer {
   padding: 20px;
-  color: $primary-color;
+}
+
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 @media (min-width: $tablet-min-width) {
-  .gallery__wrapper {
-    display: flex;
-    flex-wrap: wrap;
+  .footer__wrapper {
+    flex-direction: row;
     justify-content: space-between;
-  }
-
-  .gallery__text {
-    min-height: 230px;
   }
 }
 
 @media (min-width: $desktop-min-width) {
-  .gallery {
+  .footer {
     @include desktop-centering;
   }
 }

@@ -1,5 +1,3 @@
-@import "variables";
-
 .review {
   background-color: #ffffff;
   font-family: $main-font;
@@ -22,10 +20,50 @@
   color: #000000;
 }
 
+.reviews__age {
+  display: none;
+}
+
 .reviews__text {
   font-family: $main-font;
   font-size: 14px;
   font-weight: normal;
   line-height: 24px;
   color: $primary-color;
+}
+
+.reviews__arrows {
+  display: none;
+}
+
+@media (min-width: $tablet-min-width) {
+  .reviews__item {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .reviews__age {
+    display: block;
+    font-size: 14px;
+    font-weight: normal;
+  }
+
+  .reviews__text {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .reviews {
+    @include desktop-centering;
+  }
+
+  .reviews__arrows {
+    display: block;
+  }
+
+  .reviews__toggles {
+    display: none;
+  }
 }

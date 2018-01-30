@@ -1,0 +1,9 @@
+.page-index__footer {
+  display: none;
+}
+
+@media (min-width: $tablet-min-width) {
+  .page-index__footer {
+    display: block;
+  }
+}
