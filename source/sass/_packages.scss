@@ -10,18 +10,36 @@
 
 .packages__table {
   width: 280px * 3;
+  font-family: $main-font;
+  border-collapse: collapse;
 }
 
 .packages__cell {
   width: 280px;
+  background-color: #ffffff;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 20px;
+  border: 2px solid #e5e5e5;
 }
 
 .packages__cell--heading {
   background-color: #283645;
   color: #ffffff;
-  font-family: $main-font;
   font-size: 18px;
   font-weight: bold;
+}
+
+.packages__cell--enabled {
+  background-image: url("../img/icon-yes.svg");
+  background-repeat: no-repeat;
+  background-position: 93%;
+}
+
+.packages__cell--disabled {
+  background-image: url("../img/icon-no.svg");
+  background-repeat: no-repeat;
+  background-position: 93%;
 }
 
 .packages__price {
@@ -47,7 +65,12 @@
   }
 
   .packages__row .packages__cell:first-child {
-    display: block;
+    display: table-cell;
+  }
+
+  .packages__row:first-child .packages__cell:first-child {
+    opacity: 0;
+    border: transparent;
   }
 
   .packages__toggles {

@@ -1,21 +1,61 @@
 .header {
   background-color: rgba(#283645, 0.9);
-  padding: 20px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
+  position: relative;
+  min-height: 70px;
+  z-index: 2;
+  margin-bottom: -70px;
+  box-sizing: border-box;
+
+  .header__nav {
+    display: none;
+  }
 }
 
-@media (min-width: $tablet-min-width) {
-  .header {
-    padding: 45px;
+.header--active {
+  background-color: #283645;
+
+  .header__nav {
+    display: block;
   }
+}
+
+.header__wrapper {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__menu-toggle {
+  background: none;
+  border: none;
+}
+
+.header__menu-icon--cross {
+  display: none;
+}
+
+.header__menu-icon:hover {
+  path {
+    fill: $secondary-color;
+  }
+}
+
+.header__menu-icon:active {
+  opacity: 0.5;
 }
 
 @media (min-width: $desktop-min-width) {
   .header {
-    padding: 27px;
+    padding: 22px 0;
+    margin-bottom: -120px;
+  }
+
+  .header__wrapper {
+    padding: 0;
+  }
+
+  .header--active {
+    background-color: rgba(#283645, 0.9);
   }
 
   .header__menu-toggle {
@@ -26,5 +66,6 @@
     @include desktop-centering;
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 }

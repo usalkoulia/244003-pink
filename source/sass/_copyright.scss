@@ -7,4 +7,23 @@
   font-family: $main-font;
   font-size: 14px;
   color: $primary-color;
+  margin-right: 15px;
 }
+
+.copyright__link:hover {
+  path {
+    fill: $primary-color;
+  }
+}
+
+.copyright__link:active {
+  path {
+    fill: #bec2c7;
+  }
+}
+
+// @media (min-width: $tablet-min-width) {
+//   .copyright__text {
+//
+//   }
+// }

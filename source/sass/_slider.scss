@@ -10,3 +10,21 @@
   padding: 40px 20px 45px 20px;
   text-align: center;
 }
+
+.slider__toggle {
+  background-color: #bec2c7;
+  border: 3px solid transparent;
+  background-clip: content-box;
+  width: 6px;
+  height: 6px;
+  display: inline-block;
+  padding: 0;
+  border-radius: 50%;
+  box-sizing: content-box;
+  margin: 0 5px;
+}
+
+.slider__toggle--active {
+  background-color: #ffffff;
+  border: 3px solid #000000;
+}

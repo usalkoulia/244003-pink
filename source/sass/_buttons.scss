@@ -18,6 +18,15 @@
   color: #ffffff;
 }
 
+.button--download:hover {
+  background-color: #ffffff;
+  color: $secondary-color;
+}
+
+.button--download:active {
+  color: rgba($secondary-color, 0.5);
+}
+
 .button--submit {
   color: $secondary-color;
   border-color: $secondary-color;
