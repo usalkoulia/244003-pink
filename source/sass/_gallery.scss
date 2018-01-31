@@ -3,6 +3,11 @@
   color: $primary-color;
 }
 
+.gallery__text {
+  margin-top: 25px;
+  margin-bottom: 49px;
+}
+
 @media (min-width: $tablet-min-width) {
   .gallery__wrapper {
     display: flex;

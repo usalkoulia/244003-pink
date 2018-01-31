@@ -1,11 +1,14 @@
 .packages {
   background-color: $bg-color;
   padding: 20px;
+  padding-top: 90px;
   color: $primary-color;
+  min-height: 360px;
 }
 
 .packages__wrapper {
   overflow: scroll;
+  padding-bottom: 35px;
 }
 
 .packages__table {
@@ -54,6 +57,10 @@
 @media (min-width: $tablet-min-width) {
   .packages__table {
     width: 100%;
+  }
+
+  .packages__wrapper {
+    overflow: auto;
   }
 
   .packages__cell {

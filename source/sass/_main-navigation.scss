@@ -7,12 +7,13 @@
   text-align: center;
   margin: 0;
   padding: 0;
+  border-top: 1px solid #000000;
 }
 
 .main-nav__item {
   font-family: $main-font;
   font-size: 18px;
-  line-height: 18px;
+  line-height: 20px;
   font-weight: bold;
   list-style-type: none;
   text-transform: uppercase;

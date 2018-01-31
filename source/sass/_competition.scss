@@ -5,15 +5,17 @@
 
 .competition-form__text {
   padding: 20px;
+  padding-top: 45px;
   margin: 0;
 }
 
 .competition-form__fieldset {
-  padding: 20px;
+  padding: 15px 20px 0px 20px;
 }
 
 .competition-form__label {
   font-size: 14px;
+  margin-left: 22px;
 
   &--white {
     color: $secondary-color;
@@ -45,8 +47,11 @@
   padding: 20px;
   box-sizing: border-box;
   font-family: $main-font;
-  font-size: 18px;
+  // font-size: 18px;
   color: $primary-color;
+  width: 100%;
+  margin-top: 11px;
+  margin-bottom: 21px;
 }
 
 .competition-form__textarea {

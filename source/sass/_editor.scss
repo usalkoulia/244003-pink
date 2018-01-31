@@ -1,6 +1,9 @@
 .editor__text {
   color: $primary-color;
   margin: 0;
+  padding: 3px;
+  padding-right: 6px;
+  margin-bottom: 38px;
 }
 
 .editor__form {
@@ -19,6 +22,15 @@
 .editor__ranges {
   .editor__icon {
     display: none;
+  }
+}
+
+.editor__toggle {
+  background: transparent;
+  border: none;
+
+  path {
+    fill: #b5b9be;
   }
 }
 

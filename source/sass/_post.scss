@@ -1,17 +1,18 @@
 .post {
   background-color: $bg-color;
   font-family: $main-font;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 }
 
 .post__wrapper {
-  padding: 20px;
+  padding: 15px 17px;
 }
 
 .post__author {
   font-size: 14px;
   font-weight: bold;
   margin: 0;
+  margin-bottom: 3px;
 }
 
 .post__time {
@@ -23,16 +24,31 @@
 .post__content {
   font-size: 14px;
   line-height: 24px;
+  margin: 0;
+  margin-bottom: 13px;
 }
 
 .post__like-wrapper {
   display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.post__like-button {
+  background-color: transparent;
+  background-image: url("../img/icon-heart.svg");
+  background-repeat: no-repeat;
+  border: none;
+  width: 13px;
+  height: 12px;
+  margin-right: 19px;
 }
 
 .post__like {
   font-size: 12px;
   color: $secondary-color;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .post__image {
