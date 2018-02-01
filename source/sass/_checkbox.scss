@@ -1,0 +1,44 @@
+.checkbox {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 43px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.checkbox__input {
+  display: none;
+}
+
+.checkbox__input:checked + .checkbox__icon svg {
+  display: inline-block;
+}
+
+.checkbox__icon {
+  width: 39px;
+  height: 39px;
+  background-color: #ffffff;
+  border: 2px solid rgba(#000000, 0.1);
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: middle;
+  margin-right: 25px;
+  padding-left: 6px;
+  padding-top: 5px;
+
+  &:hover {
+    border: 2px solid $primary-color;
+  }
+
+  &:active {
+    border: 2px solid $secondary-color;
+  }
+
+  svg {
+    width: 22px;
+    height: 16px;
+    display: none;
+  }
+}

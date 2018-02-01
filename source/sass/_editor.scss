@@ -9,28 +9,73 @@
 .editor__form {
   background-color: $bg-color;
   padding: 20px;
+  padding-bottom: 40px;
+  text-align: center;
 }
 
 .editor__image {
   margin-bottom: 40px;
 }
 
+.editor__wrapper {
+  border-bottom: 2px solid rgba(#000000, 0.1);
+  margin: 0 -20px 37px -20px;
+  padding-bottom: 34px;
+}
+
+.editor__button-wrapper {
+  text-align: center;
+}
+
 .editor__button:first-of-type {
   margin-bottom: 12px;
 }
 
-.editor__ranges {
-  .editor__icon {
-    display: none;
-  }
+.editor__range-wrapper svg {
+  display: none;
+}
+
+.editor__range-wrapper {
+  display: none;
+}
+
+.editor__range-wrapper:first-of-type {
+  display: flex;
+  justify-content: center;
+}
+
+.editor__toggles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
 }
 
 .editor__toggle {
   background: transparent;
   border: none;
+  padding: 0;
+  margin: 0 13px;
+  width: 52px;
+  height: 52px;
 
-  path {
+  path,
+  rect {
     fill: #b5b9be;
+  }
+}
+
+.editor__toggle:hover {
+  path,
+  rect {
+    fill: #8d949b;
+  }
+}
+
+.editor__toggle--active {
+  path,
+  rect {
+    fill: $secondary-color;
   }
 }
 
@@ -50,12 +95,6 @@
 
   .editor__toggles {
     display: none;
-  }
-
-  .editor__ranges {
-    .editor__icon {
-      display: block;
-    }
   }
 
   .editor__wrapper {

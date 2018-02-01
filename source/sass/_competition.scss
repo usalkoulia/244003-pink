@@ -3,28 +3,27 @@
   font-family: $main-font;
 }
 
-.competition-form__text {
+.competition-form__promo {
   padding: 20px;
   padding-top: 45px;
+  padding-bottom: 2px;
   margin: 0;
 }
 
+.competition-form__label:last-of-type .competition-form__input {
+  margin-bottom: 0;
+}
+
 .competition-form__fieldset {
-  padding: 15px 20px 0px 20px;
+  padding: 37px 20px 41px 20px;
 }
 
 .competition-form__label {
   font-size: 14px;
-  margin-left: 22px;
 
   &--white {
     color: $secondary-color;
     text-transform: uppercase;
-  }
-
-  &--grey {
-    display: block;
-    font-size: 18px;
   }
 }
 
@@ -34,10 +33,29 @@
   color: $secondary-color;
   font-weight: normal;
   text-align: center;
+  margin-top: 0;
+}
+
+.competition-form__title--checkbox {
+  margin-bottom: 40px;
+}
+
+.competition-form__title--radio {
+  margin-bottom: 36px;
+}
+
+.competition-form__title--textarea {
+  margin-bottom: 16px;
 }
 
 .competition-form__fieldset--grey {
   background-color: $bg-color;
+}
+
+.competition-form__text {
+  margin-left: 22px;
+  display: block;
+  line-height: 19px;
 }
 
 .competition-form__input {
@@ -47,11 +65,21 @@
   padding: 20px;
   box-sizing: border-box;
   font-family: $main-font;
-  // font-size: 18px;
+  font-size: 18px;
+  line-height: 19px;
   color: $primary-color;
   width: 100%;
   margin-top: 11px;
-  margin-bottom: 21px;
+  margin-bottom: 22px;
+  outline: none;
+
+  &:hover {
+    border: 2px solid $primary-color;
+  }
+
+  &:focus {
+    border: 2px solid $secondary-color;
+  }
 }
 
 .competition-form__textarea {
@@ -61,7 +89,7 @@
   color: $primary-color;
   font-size: 18px;
   line-height: 30px;
-  padding: 20px;
+  padding: 14px 20px;
   box-sizing: border-box;
   border: 2px solid rgba(#000000, 0.1);
   border-radius: 3px;
@@ -69,11 +97,19 @@
 
 .competition-form__submit-wrapper {
   padding: 20px;
+  padding-top: 3px;
+  text-align: center;
+}
+
+.competition-form__submit-button {
+  margin-bottom: 38px;
 }
 
 .competition-form__legend {
   text-transform: uppercase;
   text-align: center;
+  font-size: 14px;
+  margin: 0;
 
   sup {
     color: $secondary-color;
@@ -99,7 +135,7 @@
     margin-bottom: 50px;
   }
 
-  .competition-form__text {
+  .competition-form__promo {
     min-height: 200px;
   }
 

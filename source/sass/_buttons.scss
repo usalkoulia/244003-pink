@@ -4,15 +4,17 @@
   font-weight: bold;
   text-decoration: none;
   text-align: center;
+  padding: 0;
   border: #ffffff solid 3px;
   border-radius: 35px;
   height: 55px;
-  display: block;
+  display: inline-block;
   box-sizing: border-box;
   background-color: transparent;
   line-height: 47px;
   cursor: pointer;
   width: 100%;
+  max-width: 280px;
 }
 
 .button--download {
@@ -31,10 +33,28 @@
 .button--submit {
   color: $secondary-color;
   border-color: $secondary-color;
+
+  &:hover {
+    color: #ffffff;
+    background-color: $secondary-color;
+  }
+
+  &:active {
+    color: rgba(#ffffff, 0.3);
+  }
 }
 
 .button--cancel {
-  border-color: #000000;
-  color: #000000;
-  opacity: 0.1;
+  border-color: #dddfe0;
+  color: #dddfe0;
+
+  &:hover {
+    border-color: #b5b9be;
+    color: #b5b9be;
+  }
+
+  &:active {
+    background-color: #b5b9be;
+    color: rgba(#ffffff, 0.3);
+  }
 }
