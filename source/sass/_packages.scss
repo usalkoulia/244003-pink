@@ -5,6 +5,10 @@
   color: $primary-color;
   min-height: 360px;
   position: relative;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
 }
 
 .packages__wrapper {
@@ -89,27 +93,67 @@
 }
 
 @media (min-width: $tablet-min-width) {
+  .packages {
+    padding-top: 85px;
+    padding-bottom: 0;
+    min-height: 0;
+  }
+
   .packages__table {
     width: 100%;
   }
 
   .packages__wrapper {
     overflow: auto;
+    padding-bottom: 0;
+    padding: 0 20px;
+    min-height: 290px;
   }
 
   .packages__cell {
-    width: auto;
+    width: 25%;
+    padding: 13px 16px;
+    background-position: center;
   }
 
   .packages__cell-text {
     display: none;
   }
 
+  .packages__cell--heading {
+    text-align: center;
+    font-size: 16px;
+    padding: 14px 20px 12px 20px;
+  }
+
+  .packages__cell--heading:nth-of-type(2) {
+    border-left: none;
+  }
+
+  .packages__cell--heading:nth-of-type(4) {
+    border-right: none;
+  }
+
   .packages__row .packages__cell:first-child {
     display: table-cell;
+    position: static;
+    text-transform: none;
+    width: 114px;
+    border: 2px solid #e5e5e5;
+  }
+
+  .packages__price {
+    font-size: 18px;
+    display: block;
+    padding-top: 6px;
   }
 
   .packages__toggles {
+    display: none;
+  }
+
+  .packages__wrapper::before,
+  .packages__wrapper::after {
     display: none;
   }
 }

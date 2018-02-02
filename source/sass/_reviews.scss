@@ -5,7 +5,7 @@
 
 .reviews__wrapper {
   text-align: center;
-  min-height: 350px;
+  min-height: 352px;
 }
 
 .reviews__item {
@@ -44,9 +44,19 @@
 }
 
 @media (min-width: $tablet-min-width) {
+  .reviews__wrapper {
+    min-height: 299px;
+}
+
   .reviews__item {
     display: flex;
     flex-direction: column-reverse;
+    margin-bottom: 2px;
+  }
+
+  .reviews__author {
+    font-size: 20px;
+    line-height: 30px;
   }
 
   .reviews__age {
@@ -58,6 +68,8 @@
   .reviews__text {
     font-size: 18px;
     line-height: 30px;
+    margin: 0;
+    margin-bottom: 36px;
   }
 }
 

@@ -45,10 +45,12 @@
 
   .main-nav__list {
     display: flex;
+    border: none;
+    justify-content: space-between;
+    width: 620px;
   }
 
   .main-nav__item {
-    margin-left: 60px;
     text-transform: none;
     font-weight: normal;
     border: none;

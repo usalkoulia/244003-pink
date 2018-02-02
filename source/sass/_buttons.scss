@@ -58,3 +58,9 @@
     color: rgba(#ffffff, 0.3);
   }
 }
+
+@media (min-width: $tablet-min-width) {
+  .button {
+    max-width: 300px;
+  }
+}

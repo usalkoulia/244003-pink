@@ -53,6 +53,16 @@
   opacity: 0.5;
 }
 
+@media (min-width: $tablet-min-width) {
+  .header {
+    margin-bottom: -112px;
+  }
+
+  .header__wrapper {
+    padding: 41px 20px;
+  }
+}
+
 @media (min-width: $desktop-min-width) {
   .header {
     padding: 22px 0;

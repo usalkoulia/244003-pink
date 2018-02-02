@@ -60,13 +60,18 @@
   }
 
   .advantages__slogan-wrapper {
-    min-height: 200px;
-    padding: 50px 20px;
+    min-height: 145px;
+    padding: 47px 20px;
   }
 
   .advantages__slogan {
     font-size: 40px;
     margin: 0;
+    line-height: 49px;
+  }
+
+  .advantages__title {
+    margin-bottom: 10px;
   }
 
   .advantages__list {
@@ -74,13 +79,17 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    min-height: 465px;
-    background: url("../img/iphone-screen-mobile@1x.png") no-repeat left top;
+    min-height: 409px;
+    background: url("../img/iphone-screen-mobile@1x.png") no-repeat 20px top;
     background-size: 270px;
   }
 
   .advantages__item {
     width: 50%;
+  }
+
+  .advantages__description {
+    margin-bottom: 36px;
   }
 }
 
