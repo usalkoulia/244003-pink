@@ -125,5 +125,13 @@
 
   .post--wide {
     width: 100%;
+
+    .post__image {
+      height: 506px;
+    }
+  }
+
+  .post__image {
+    height: 401px;
   }
 }

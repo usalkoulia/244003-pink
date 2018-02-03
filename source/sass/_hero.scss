@@ -2,8 +2,7 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 200px;
-  min-height: 160px;
+  min-height: 200px;
   padding: 30px 20px 12px 20px;
   display: flex;
   justify-content: center;
@@ -21,10 +20,16 @@
 
 @media (min-width: $tablet-min-width) {
   .hero {
-    height: 400px;
+    min-height: 400px;
   }
 
   .hero__title {
     font-size: 50px;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .hero {
+    min-height: 366px;
   }
 }

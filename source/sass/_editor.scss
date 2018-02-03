@@ -161,9 +161,43 @@
 
   .editor__text {
     @include desktop-centering;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .editor__form {
+    padding-left: 80px;
+    padding-right: 60px;
+    padding-bottom: 57px;
+  }
+
+  .editor__wrapper {
+    margin-left: 91px;
+    padding-top: 0;
+  }
+
+  .editor__button {
+    max-width: 183px;
   }
 
   .editor__button-wrapper {
     display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+  }
+
+  .editor__range-wrapper {
+    padding-bottom: 11px;
+    margin-bottom: 15px;
+  }
+
+  .editor__range-wrapper svg {
+    width: 44px;
+    height: 44px;
+    margin-right: 47px;
+  }
+
+  .editor__button:first-of-type {
+    margin-bottom: 0;
   }
 }

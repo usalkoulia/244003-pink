@@ -33,3 +33,9 @@
     width: 200px;
   }
 }
+
+@media (min-width: $desktop-min-width) {
+  .form-range {
+    width: 288px;
+  }
+}
