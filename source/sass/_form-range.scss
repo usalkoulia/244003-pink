@@ -27,3 +27,9 @@
 .form-range__toggle:hover {
   background-color: $secondary-color;
 }
+
+@media (min-width: $tablet-min-width) {
+  .form-range {
+    width: 200px;
+  }
+}

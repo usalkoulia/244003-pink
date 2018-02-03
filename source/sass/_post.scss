@@ -64,25 +64,56 @@
 @media (min-width: $tablet-min-width) {
   .post {
     width: calc(50% - 10px);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
   }
 
   .post__wrapper {
     position: relative;
+    padding: 26px 27px 19px 27px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    min-height: 155px;
+    box-sizing: border-box;
   }
 
   .post--wide {
     width: 100%;
+    margin-bottom: 50px;
 
     .post__like-wrapper {
       position: absolute;
-      top: 0;
-      right: 0;
+      top: 28px;
+      right: 24px;
+      width: 124px;
     }
+
+    .post__image {
+      height: 510px;
+    }
+
+    .post__wrapper {
+      padding: 26px 27px 12px 27px;
+      min-height: auto;
+    }
+  }
+
+  .post__image {
+    height: 300px;
+    vertical-align: top;
   }
 
   .post__like-wrapper {
     flex-direction: row-reverse;
     justify-content: space-between;
+    margin-top: auto;
+    margin-bottom: 7px;
+  }
+
+  .post__like-button {
+    margin-right: 5px;
   }
 }
 
