@@ -24,16 +24,29 @@
 }
 
 @media (min-width: $tablet-min-width) {
+  .footer {
+    min-height: 80px;
+    padding-top: 33px;
+  }
+
   .footer__wrapper {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     min-height: auto;
   }
+
+  .footer__logo,
+  .footer__social,
+  .footer__copyright {
+    width: 33%;
+  }
 }
 
 @media (min-width: $desktop-min-width) {
   .footer {
     @include desktop-centering;
+    padding: 63px 10px;
+    min-height: 197px;
   }
 }

@@ -27,3 +27,23 @@
   background-color: #ffffff;
   border: 3px solid #000000;
 }
+
+@media (min-width: $desktop-min-width) {
+  .slider {
+    position: relative;
+  }
+
+  .slider__button {
+    background-color: transparent;
+    position: absolute;
+    top: 80px;
+  }
+
+  .slider__button--prev {
+    left: 0;
+  }
+
+  .slider__button--next {
+    right: 0;
+  }
+}

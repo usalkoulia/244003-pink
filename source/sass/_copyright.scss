@@ -1,6 +1,7 @@
 .copyright {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
 }
 
 .copyright__text {
@@ -22,8 +23,8 @@
   }
 }
 
-// @media (min-width: $tablet-min-width) {
-//   .copyright__text {
-//
-//   }
-// }
+@media (min-width: $desktop-min-width) {
+  .copyright__text {
+    font-size: 18px;
+  }
+}

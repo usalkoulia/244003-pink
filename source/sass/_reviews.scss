@@ -46,7 +46,7 @@
 @media (min-width: $tablet-min-width) {
   .reviews__wrapper {
     min-height: 299px;
-}
+  }
 
   .reviews__item {
     display: flex;
@@ -76,6 +76,25 @@
 @media (min-width: $desktop-min-width) {
   .reviews {
     @include desktop-centering;
+    padding-top: 140px;
+  }
+
+  .reviews__wrapper {
+    min-height: 274px;
+  }
+
+  .reviews__item {
+    padding: 44px 80px 25px 80px;
+    margin-bottom: 0;
+  }
+
+  .reviews__author {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .reviews__age {
+    font-size: 18px;
   }
 
   .reviews__arrows {
