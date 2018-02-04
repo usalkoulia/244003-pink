@@ -24,11 +24,15 @@
 
 @media (min-width: $desktop-min-width) {
   .gallery {
-    @include desktop-centering;
+    padding: 0;
   }
 
   .gallery__text {
     margin-top: 92px;
     margin-bottom: 60px;
+  }
+
+  .gallery__wrapper {
+    justify-content: center;
   }
 }
