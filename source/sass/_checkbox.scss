@@ -42,3 +42,15 @@
     display: none;
   }
 }
+
+@media (min-width: $tablet-min-width) {
+  .checkbox__icon {
+    margin-right: 16px;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .checkbox {
+    width: 315px;
+  }
+}
