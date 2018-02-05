@@ -5,9 +5,17 @@
   text-align: center;
 }
 
+.promo-text--hidden {
+  display: none;
+}
+
 @media (min-width: $tablet-min-width) {
   .promo-text {
     font-size: 18px;
     line-height: 30px;
+  }
+
+  .promo-text--hidden {
+    display: inline-block;
   }
 }

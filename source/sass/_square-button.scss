@@ -8,8 +8,23 @@
   border: none;
   text-transform: uppercase;
   border-radius: 3px;
-  width: 280px;
+  width: 100%;
+  max-width: 280px;
   height: 63px;
   padding: 0;
   cursor: pointer;
+
+  &:hover {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    color: rgba(#ffffff, 0.3);
+  }
+}
+
+@media (min-width: $tablet-min-width) {
+  .square-button {
+    max-width: 300px;
+  }
 }

@@ -5,10 +5,10 @@
 @media (min-width: $tablet-min-width) {
   .research {
     display: block;
-    padding: 20px;
+    padding: 46px;
     padding-left: 50%;
     padding-right: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 37px;
   }
 
   .research__title {
@@ -16,12 +16,16 @@
     font-size: 30px;
     line-height: 36px;
     font-weight: bold;
+    margin: 0;
+    margin-bottom: 10px;
   }
 
   .research__text {
     font-family: $main-font;
     font-size: 14px;
     line-height: 24px;
+    margin: 0;
+    margin-bottom: 13px;
   }
 
   .research__link {
@@ -35,11 +39,32 @@
   .research {
     background-color: $bg-color;
     padding: 0;
+    padding-top: 137px;
+    min-height: 320px;
+    margin-bottom: 0;
   }
 
   .research__centering {
     @include desktop-centering;
-    padding-left: 325px;
-    padding-right: 100px;
+    padding-left: 376px;
+  }
+
+  .research__title {
+    margin-bottom: 21px;
+
+    br {
+      display: none;
+    }
+  }
+
+  .research__text {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+
+  .research__link {
+    font-size: 18px;
+    line-height: 30px;
   }
 }

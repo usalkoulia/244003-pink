@@ -1,27 +1,32 @@
 .contacts {
   font-family: $main-font;
   text-align: center;
+  padding-top: 42px;
+  line-height: 31px;
 }
 
 .contacts__list {
   list-style-type: none;
   margin: 0;
   padding: 20px;
+  padding-top: 27px;
 }
 
 .contacts__feedback {
   font-size: 24px;
   font-weight: 300;
   color: $primary-color;
+  margin: 0;
 }
 
 .contacts__item {
   font-size: 18px;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .contacts__link {
+  display: block;
   font-size: 24px;
   font-weight: 300;
   color: #d22856;
@@ -33,33 +38,99 @@
   background-repeat: no-repeat;
   background-position: center;
   min-height: 200px;
+  position: relative;
+}
+
+.contacts__map::before {
+  content: "";
+  background-image: url("../img/bg-triangle-white-footer.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 @media (min-width: $tablet-min-width) {
+  .contacts {
+    padding-top: 0;
+    line-height: 49px;
+  }
+
+  .contacts__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 45px;
+    padding-bottom: 33px;
+  }
+
   .contacts__item {
-    width: 45%;
-    display: inline-block;
+    width: 50%;
+    line-height: 18px;
+    margin-bottom: 51px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .contacts__link {
+    margin-top: 8px;
+    line-height: 27px;
   }
 
   .contacts__feedback {
     font-size: 40px;
     padding: 45px;
+    padding-bottom: 0;
     margin: 0;
   }
 
   .contacts__map {
-    min-height: 380px;
+    min-height: 374px;
   }
 }
 
 @media (min-width: $desktop-min-width) {
+  .contacts {
+    padding-top: 70px;
+  }
+
   .contacts__feedback {
     @include desktop-centering;
+    font-size: 50px;
+    padding: 0 130px;
+    line-height: 55px;
+    margin-bottom: 63px;
   }
 
   .contacts__list {
     @include desktop-centering;
     display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .contacts__item {
+    margin-bottom: 53px;
+  }
+
+  .contacts__item:nth-of-type(1) {
+    order: 1;
+  }
+
+  .contacts__item:nth-of-type(2) {
+    order: 3;
+  }
+
+  .contacts__item:nth-of-type(3) {
+    order: 2;
+  }
+
+  .contacts__link {
+    margin-top: 26px;
   }
 
   .contacts__map {

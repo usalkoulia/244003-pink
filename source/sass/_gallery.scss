@@ -3,6 +3,11 @@
   color: $primary-color;
 }
 
+.gallery__text {
+  margin-top: 25px;
+  margin-bottom: 49px;
+}
+
 @media (min-width: $tablet-min-width) {
   .gallery__wrapper {
     display: flex;
@@ -11,12 +16,23 @@
   }
 
   .gallery__text {
-    min-height: 230px;
+    min-height: 88px;
+    margin-top: 72px;
+    margin-bottom: 47px;
   }
 }
 
 @media (min-width: $desktop-min-width) {
   .gallery {
-    @include desktop-centering;
+    padding: 0;
+  }
+
+  .gallery__text {
+    margin-top: 92px;
+    margin-bottom: 60px;
+  }
+
+  .gallery__wrapper {
+    justify-content: center;
   }
 }
