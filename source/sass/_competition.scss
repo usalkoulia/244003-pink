@@ -126,6 +126,10 @@
   sup {
     color: $secondary-color;
   }
+
+  span {
+    display: none;
+  }
 }
 
 .competition-form__input::placeholder,
@@ -215,7 +219,7 @@
     order: 1;
   }
 
-  .competition-form__fieldset:nth-of-type(2) {
+  .competition-form__fieldset--checkboxes {
     order: 4;
     padding: 53px 58px 47px 58px;
   }
@@ -292,13 +296,64 @@
     padding: 48px 73px;
   }
 
-  .competition-form__label-list {
-    column-count: 3;
+  .competition-form__fieldset:nth-of-type(5) {
+    padding-top: 42px;
+    padding-bottom: 38px;
+    margin-bottom: 65px;
+  }
+
+  .competition-form__fieldset--checkboxes {
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 0;
+    padding-bottom: 11px;
   }
 
   .competition-form__label--reversed {
     margin-bottom: 0;
     width: 375px;
+  }
+
+  .competition-form__label--checkbox {
+    margin-bottom: 43px;
+  }
+
+  .competition-form__label--checkbox:nth-of-type(1) {
+    order: 1;
+    width: 315px;
+  }
+
+  .competition-form__label--checkbox:nth-of-type(2) {
+    order: 4;
+    width: 315px;
+  }
+
+  .competition-form__label--checkbox:nth-of-type(3) {
+    order: 2;
+    width: 295px;
+  }
+
+  .competition-form__label--checkbox:nth-of-type(4) {
+    order: 5;
+    width: 295px;
+  }
+
+  .competition-form__label--checkbox:nth-of-type(5) {
+    order: 3;
+    width: 240px;
+  }
+
+  .competition-form__label--checkbox:nth-of-type(6) {
+    order: 6;
+    width: 240px;
+  }
+
+  .competition-form__textarea {
+    height: 128px;
+  }
+
+  .competition-form__legend span {
+    display: inline;
   }
 
   .competition-form__submit-wrapper {
