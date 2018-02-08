@@ -1,5 +1,5 @@
 .header {
-  background-color: rgba(#283645, 0.9);
+  background-color: rgba(#000000, 0.3);
   position: relative;
   min-height: 70px;
   z-index: 2;
@@ -28,7 +28,7 @@
 }
 
 .header__wrapper {
-  padding: 20px;
+  padding: 21px;
   display: flex;
   justify-content: space-between;
 }
@@ -59,7 +59,13 @@
   }
 
   .header__wrapper {
-    padding: 41px 20px;
+    padding: 27px 20px;
+    min-height: 55px;
+  }
+
+  .header__logo-link img {
+    height: 40px;
+    width: 148px;
   }
 }
 
@@ -74,7 +80,7 @@
   }
 
   .header--active {
-    background-color: rgba(#283645, 0.9);
+    background-color: rgba(#000000, 0.3);
   }
 
   .header__menu-toggle {

@@ -11,6 +11,9 @@
 }
 
 .competition-form__fieldset {
+  border: none;
+  margin-left: 0;
+  margin-right: 0;
   padding: 37px 20px 41px 20px;
 }
 
@@ -29,6 +32,10 @@
     color: $secondary-color;
     text-transform: uppercase;
   }
+}
+
+.competition-form__label--checkbox {
+  margin-bottom: 43px;
 }
 
 .competition-form__label--reversed {
@@ -149,8 +156,8 @@
 
   .competition-form__fieldset {
     margin-bottom: 65px;
-    padding: 0;
     position: relative;
+    padding: 0;
   }
 
   .competition-form__promo {
@@ -195,6 +202,10 @@
   .competition-form__input {
     flex-grow: 1;
     margin: 0;
+  }
+
+  .competition-form__label--checkbox {
+    margin-bottom: 43px;
   }
 
   .competition-form__label--reversed {
@@ -286,9 +297,12 @@
     width: 435px;
   }
 
-  .competition-form__fieldset:nth-of-type(3) {
+  .competition-form__fieldset:nth-of-type(3) .competition-form__fieldset-wrapper {
     display: flex;
     justify-content: space-between;
+  }
+
+  .competition-form__fieldset:nth-of-type(3) {
     padding: 45px 58px 17px 58px;
   }
 
@@ -303,10 +317,13 @@
   }
 
   .competition-form__fieldset--checkboxes {
-    display: flex;
-    flex-wrap: wrap;
     padding-right: 0;
     padding-bottom: 11px;
+  }
+
+  .competition-form__fieldset--checkboxes .competition-form__fieldset-wrapper {
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .competition-form__label--reversed {

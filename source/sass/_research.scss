@@ -9,6 +9,30 @@
     padding-left: 50%;
     padding-right: 30px;
     margin-bottom: 37px;
+    background-image: url("../img/icon-timer.svg");
+    background-repeat: no-repeat;
+    background-position: 21px 9px;
+    background-size: 238px;
+    position: relative;
+  }
+
+  .research::before {
+    content: "24";
+    width: 202px;
+    height: 202px;
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+    border: 13px solid $secondary-color;
+    border-radius: 50%;
+    left: 39px;
+    top: 64px;
+    font-size: 96px;
+    color: $secondary-color;
+    font-family: $main-font;
+    font-weight: bold;
+    text-align: center;
+    line-height: 165px;
   }
 
   .research__title {
@@ -42,6 +66,18 @@
     padding-top: 137px;
     min-height: 320px;
     margin-bottom: 0;
+    background-position: 131px 44px;
+    background-size: 300px;
+  }
+
+  .research::before {
+    width: 253px;
+    height: 253px;
+    font-size: 120px;
+    border: 16px solid $secondary-color;
+    left: 153px;
+    top: 113px;
+    line-height: 208px;
   }
 
   .research__centering {
