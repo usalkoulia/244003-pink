@@ -17,7 +17,12 @@
   box-sizing: border-box;
 }
 
+.social__link:hover {
+  border: 3px solid $primary-color;
+}
+
 .social__link:active {
+  border: 3px solid #e9ebec;
   opacity: 0.5;
 }
 

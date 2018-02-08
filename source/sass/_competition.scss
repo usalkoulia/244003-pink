@@ -34,6 +34,7 @@
 .competition-form__label--reversed {
   color: $secondary-color;
   text-transform: uppercase;
+  position: relative;
 }
 
 .competition-form__label:last-of-type {
@@ -312,6 +313,27 @@
   .competition-form__label--reversed {
     margin-bottom: 0;
     width: 375px;
+  }
+
+  .competition-form__label--reversed::after {
+    content: "";
+    width: 62px;
+    height: 59px;
+    box-sizing: border-box;
+    background-color: #e5e5e5;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+  }
+
+  .competition-form__label--reversed:first-of-type::after {
+    background-image: url("../img/icon-phone.svg");
+  }
+
+  .competition-form__label--reversed:last-of-type::after {
+    background-image: url("../img/icon-mail.svg");
   }
 
   .competition-form__label--checkbox {

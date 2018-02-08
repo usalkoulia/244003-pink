@@ -11,16 +11,16 @@
   margin-right: 15px;
 }
 
+.copyright__link {
+  fill: $secondary-color;
+}
+
 .copyright__link:hover {
-  path {
-    fill: $primary-color;
-  }
+  fill: $primary-color;
 }
 
 .copyright__link:active {
-  path {
-    fill: #bec2c7;
-  }
+  fill: #bec2c7;
 }
 
 @media (min-width: $desktop-min-width) {

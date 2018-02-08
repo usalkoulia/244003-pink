@@ -43,10 +43,12 @@
   display: none;
 }
 
+.header__menu-icon {
+  fill: #ffffff;
+}
+
 .header__menu-icon:hover {
-  path {
-    fill: $secondary-color;
-  }
+  fill: $secondary-color;
 }
 
 .header__menu-icon:active {

@@ -11,6 +11,14 @@
   justify-content: space-around;
 }
 
+.footer__logo-link svg {
+  fill: $secondary-color;
+}
+
+.footer__logo-letter {
+  fill: $primary-color;
+}
+
 .footer__logo-link:hover .footer__logo-letter {
   fill: $secondary-color;
 }
