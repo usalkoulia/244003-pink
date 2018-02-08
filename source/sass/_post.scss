@@ -56,10 +56,18 @@
   vertical-align: top;
 }
 
-.post--wide .post__image {
-  margin-left: -20px;
-  margin-right: -20px;
-  width: calc(100% + 40px);
+.post--wide {
+  margin-bottom: 20px;
+
+  .post__wrapper {
+    padding-bottom: 14px;
+  }
+
+  .post__image {
+    margin-left: -20px;
+    margin-right: -20px;
+    width: calc(100% + 40px);
+  }
 }
 
 @media (min-width: $tablet-min-width) {
@@ -92,7 +100,7 @@
     }
 
     .post__image {
-      height: 510px;
+      height: 509px;
     }
 
     .post__wrapper {
@@ -120,7 +128,7 @@
 @media (min-width: $desktop-min-width) {
   .post {
     width: 300px;
-    margin-bottom: 50px;
+    margin-bottom: 54px;
     margin-left: 10px;
     margin-right: 10px;
   }
@@ -129,6 +137,7 @@
     width: 100%;
     margin-left: 0;
     margin-right: 0;
+    margin-bottom: 49px;
 
     .post__image {
       height: 506px;
@@ -144,6 +153,10 @@
   }
 
   .post__image {
-    height: 401px;
+    height: 400px;
+  }
+
+  .post__like-button {
+    margin-right: 8px;
   }
 }

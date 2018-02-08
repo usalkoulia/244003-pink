@@ -34,7 +34,7 @@
 @media (min-width: $tablet-min-width) {
   .footer {
     min-height: 80px;
-    padding-top: 33px;
+    padding-top: 40px;
   }
 
   .footer__wrapper {
@@ -42,6 +42,10 @@
     justify-content: space-between;
     align-items: center;
     min-height: auto;
+  }
+
+  .footer__logo {
+    margin-top: -14px;
   }
 
   .footer__logo,
@@ -54,7 +58,10 @@
 @media (min-width: $desktop-min-width) {
   .footer {
     @include desktop-centering;
-    padding: 63px 10px;
-    min-height: 197px;
+    padding: 68px 10px;
+  }
+
+  .footer__logo {
+    margin-top: -10px;
   }
 }

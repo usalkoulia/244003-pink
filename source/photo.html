@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Страница фотографий пользователей приложения Pink</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/picturefill.min.js" async></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
@@ -52,14 +53,11 @@
       <div class="header__centering">
         <div class="header__wrapper">
           <a class="header__logo-link" href="#">
-            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
-              <g>
-                <path fill="#FFFFFF" d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064 c0,4.861-4.057,7.373-8.854,7.373H2.544v6.825c0,0.708-0.58,1.288-1.288,1.288C0.58,22.859,0,22.279,0,21.571V1.449z M8.114,12.428 c3.734,0,6.182-1.996,6.182-4.958V7.405c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917H8.114z"/>
-                <path fill="#FFFFFF" d="M21.729,1.288C21.729,0.58,22.308,0,22.983,0c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.288-1.288,1.288c-0.676,0-1.255-0.58-1.255-1.288V1.288z"/>
-                <path fill="#FFFFFF" d="M30.87,1.32c0-0.676,0.579-1.256,1.256-1.256h0.354c0.58,0,0.934,0.29,1.288,0.74l13.684,17.45V1.256 C47.451,0.58,47.998,0,48.707,0c0.676,0,1.223,0.58,1.223,1.256v20.348c0,0.676-0.482,1.191-1.158,1.191h-0.129 c-0.548,0-0.934-0.322-1.32-0.772L33.349,4.153v17.45c0,0.676-0.547,1.256-1.255,1.256c-0.677,0-1.224-0.58-1.224-1.256V1.32z"/>
-                <path fill="#FFFFFF" d="M56.3,1.288C56.3,0.58,56.879,0,57.556,0c0.708,0,1.287,0.58,1.287,1.288v12.331L71.689,0.451 C71.979,0.193,72.269,0,72.688,0c0.676,0,1.224,0.612,1.224,1.256c0,0.354-0.161,0.644-0.419,0.901l-7.984,7.92l8.564,10.561 c0.225,0.29,0.354,0.547,0.354,0.934c0,0.676-0.579,1.288-1.287,1.288c-0.483,0-0.806-0.258-1.03-0.58l-8.403-10.463l-4.862,4.861 v4.894c0,0.708-0.579,1.288-1.287,1.288c-0.677,0-1.256-0.58-1.256-1.288V1.288z"/>
-              </g>
-            </svg>
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+              <img src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип приложения Pink">
+            </picture>
           </a>
           <button class="header__menu-toggle" type="button"><span class="visually-hidden">Открыть меню</span>
             <svg class="header__menu-icon header__menu-icon--burger" width="50px" height="24px">
@@ -104,7 +102,11 @@
           <article class="gallery__item post post--wide">
             <h2 class="visually-hidden">Панорама</h2>
             <a class="post__link" href="#">
-              <img class="post__image" src="../img/panorama-mobile@1x.jpg" alt="Панорама" width="320" height="137">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+                <img class="post__image" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@1x.jpg 1x, img/panorama-mobile@2x.jpg 2x" width="320" height="137" alt="Панорама">
+              </picture>
             </a>
             <div class="post__wrapper">
               <p class="post__author">Анна <span class="post__time">(5 минут назад)</span></p>
@@ -118,7 +120,11 @@
           <article class="gallery__item post">
             <h2 class="visually-hidden">Белый автомобиль</h2>
             <a class="post__link" href="#">
-              <img class="post__image" src="../img/photo-car-mobile@1x.jpg" alt="Белый автомобиль" width="280" height="180">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+                <img class="post__image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@1x.jpg 1x, img/photo-car-mobile@2x.jpg 2x" width="280" height="180" alt="Белый автомобиль">
+              </picture>
             </a>
             <div class="post__wrapper">
               <p class="post__author">Левон <span class="post__time">(5 часов назад)</span></p>
@@ -132,7 +138,11 @@
           <article class="gallery__item post">
             <h2 class="visually-hidden">Барабаны</h2>
             <a class="post__link" href="#">
-              <img class="post__image" src="../img/photo-drumset-mobile@1x.jpg" alt="Барабаны" width="280" height="180">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+                <img class="post__image" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@1x.jpg 1x, img/photo-drumset-mobile@2x.jpg 2x" width="280" height="180" alt="Барабаны">
+              </picture>
             </a>
             <div class="post__wrapper">
               <p class="post__author">Антон <span class="post__time">(12 часов назад)</span></p>
@@ -146,7 +156,11 @@
           <article class="gallery__item post">
             <h2 class="visually-hidden">Небо сквозь стеклянную крышу</h2>
             <a class="post__link" href="#">
-              <img class="post__image" src="../img/photo-window-mobile@1x.jpg" alt="Небо сквозь стеклянную крышу" width="280" height="180">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+                <img class="post__image" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@1x.jpg 1x, img/photo-window-mobile@2x.jpg 2x" width="280" height="180" alt="Небо сквозь стеклянную крышу">
+              </picture>
             </a>
             <div class="post__wrapper">
               <p class="post__author">Борис <span class="post__time">(20 часов назад)</span></p>
@@ -160,7 +174,11 @@
           <article class="gallery__item post">
             <h2 class="visually-hidden">Кубанская бахча</h2>
             <a class="post__link" href="#">
-              <img class="post__image" src="../img/photo-fair-mobile@1x.jpg" alt="Кубанская бахча" width="280" height="180">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+                <img class="post__image" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@1x.jpg 1x, img/photo-fair-mobile@2x.jpg 2x" width="280" height="180" alt="Кубанская бахча">
+              </picture>
             </a>
             <div class="post__wrapper">
               <p class="post__author">Сергей <span class="post__time">(25 часов назад)</span></p>
@@ -174,7 +192,11 @@
           <article class="gallery__item post">
             <h2 class="visually-hidden">Ноги а мокасинах</h2>
             <a class="post__link" href="#">
-              <img class="post__image" src="../img/photo-pov-mobile@1x.jpg" alt="Ноги в мокасинах" width="280" height="180">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+                <img class="post__image" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@1x.jpg 1x, img/photo-pov-mobile@2x.jpg 2x" width="280" height="180" alt="Ноги в мокасинах">
+              </picture>
             </a>
             <div class="post__wrapper">
               <p class="post__author">Максим <span class="post__time">(40 часов назад)</span></p>
@@ -188,7 +210,11 @@
           <article class="gallery__item post">
             <h2 class="visually-hidden">Крыло самолета на фоне рассвета</h2>
             <a class="post__link" href="#">
-              <img class="post__image" src="../img/photo-wing-mobile@1x.jpg" alt="Крыло самолета на фоне рассвета" width="280" height="180">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+                <img class="post__image" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@1x.jpg 1x, img/photo-wing-mobile@2x.jpg 2x" width="280" height="180" alt="Крыло самолета на фоне рассвета">
+              </picture>
             </a>
             <div class="post__wrapper">
               <p class="post__author">Надежда <span class="post__time">(45 часов назад)</span></p>
@@ -206,7 +232,11 @@
         <h2 class="visually-hidden">Инструмент обработки изображения</h2>
         <p class="editor__text promo-text">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
         <form class="editor__form" action="https://echo.htmlacademy.ru" method="post">
-          <img class="editor__image" src="../img/photo-road-mobile@1x.jpg" alt="Зимний пейзаж" width="280" height="374">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+            <img class="editor__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@1x.jpg 1x, img/photo-road-mobile@2x.jpg 2x" width="280" height="374" alt="Зимний пейзаж">
+          </picture>
           <div class="editor__wrapper">
             <div class="editor__toggles">
               <button class="editor__toggle editor__toggle--active" type="button">

@@ -9,12 +9,13 @@
 .editor__form {
   background-color: $bg-color;
   padding: 20px;
-  padding-bottom: 40px;
+  padding-bottom: 41px;
   text-align: center;
 }
 
 .editor__image {
   margin-bottom: 40px;
+  vertical-align: top;
 }
 
 .editor__button-wrapper {
@@ -42,14 +43,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 30px;
+  margin-bottom: 34px;
 }
 
 .editor__toggle {
   background: transparent;
   border: none;
   padding: 0;
-  margin: 0 13px;
+  margin: 0 14px;
   width: 52px;
   height: 52px;
 
@@ -78,7 +79,7 @@
   height: 2px;
   border: none;
   margin-top: 34px;
-  margin-bottom: 37px;
+  margin-bottom: 36px;
 }
 
 @media (min-width: $tablet-min-width) {
@@ -157,12 +158,13 @@
 @media (min-width: $desktop-min-width) {
   .editor {
     @include desktop-centering;
+    margin-bottom: 30px;
   }
 
   .editor__text {
     @include desktop-centering;
-    padding: 10px;
-    margin-bottom: 10px;
+    padding-top: 5px;
+    margin-bottom: 5px;
   }
 
   .editor__form {
