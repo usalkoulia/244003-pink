@@ -6,17 +6,20 @@
   .research {
     display: block;
     padding: 46px;
-    padding-left: 50%;
     padding-right: 30px;
     margin-bottom: 37px;
+    position: relative;
+  }
+
+  .research__background {
     background-image: url("../img/icon-timer.svg");
     background-repeat: no-repeat;
     background-position: 21px 9px;
     background-size: 238px;
-    position: relative;
+    padding-left: 50%;
   }
 
-  .research::before {
+  .research__background::before {
     content: "24";
     width: 202px;
     height: 202px;

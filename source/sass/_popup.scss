@@ -1,10 +1,18 @@
 .popup {
   font-family: $main-font;
   line-height: 24px;
-  padding: 40px 20px 50px 20px;
   text-align: center;
   box-shadow: 0 7px 25px 0 rgba(#000000, 0.1);
-  display: none;
+  max-width: 320px;
+  box-sizing: border-box;
+}
+
+.popup--error {
+  padding: 40px 20px 50px 20px;
+}
+
+.popup__wrapper {
+  padding: 40px 20px 0 20px;
 }
 
 .popup__title {
@@ -28,7 +36,42 @@
 
 .popup__button-wrapper--grey {
   background-color: #f2f2f2;
-  margin-left: -20px;
-  margin-right: -20px;
   padding: 50px 0;
+}
+
+@media (min-width: $tablet-min-width) {
+  .popup {
+    min-width: 460px;
+  }
+
+  .popup--error {
+    padding: 50px 80px;
+  }
+
+  .popup__wrapper {
+    padding: 50px 80px 0 80px;
+  }
+
+  .popup__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .popup__text {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .popup--error {
+    min-width: 460px;
+  }
+
+  .popup--submit {
+    min-width: 780px;
+
+    .popup__button {
+      width: 460px;
+    }
+  }
 }
