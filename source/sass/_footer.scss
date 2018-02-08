@@ -11,24 +11,17 @@
   justify-content: space-around;
 }
 
-.footer__logo-link svg {
-  fill: $secondary-color;
-}
-
-.footer__logo-letter {
+.footer__logo-link {
   fill: $primary-color;
 }
 
-.footer__logo-link:hover .footer__logo-letter {
+.footer__logo-link:hover {
   fill: $secondary-color;
 }
 
 .footer__logo-link:active {
   opacity: 0.5;
-
-  .footer__logo-letter {
-    fill: $primary-color;
-  }
+  fill: $primary-color;
 }
 
 @media (min-width: $tablet-min-width) {

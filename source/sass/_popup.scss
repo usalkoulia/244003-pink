@@ -67,11 +67,16 @@
     min-width: 460px;
   }
 
+  .popup__wrapper {
+    padding: 50px 150px 0 150px;
+  }
+
   .popup--submit {
     min-width: 780px;
 
     .popup__button {
       width: 460px;
+      max-width: 100%;
     }
   }
 }
