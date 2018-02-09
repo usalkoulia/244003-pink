@@ -24,6 +24,14 @@
   fill: $primary-color;
 }
 
+.footer__logo--mob-tab {
+  display: block;
+}
+
+.footer__logo--desk {
+  display: none;
+}
+
 @media (min-width: $tablet-min-width) {
   .footer {
     min-height: 80px;
@@ -56,5 +64,13 @@
 
   .footer__logo {
     margin-top: -10px;
+  }
+
+  .footer__logo--mob-tab {
+    display: none;
+  }
+
+  .footer__logo--desk {
+    display: block;
   }
 }
