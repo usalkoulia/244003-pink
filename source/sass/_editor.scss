@@ -53,23 +53,27 @@
   margin: 0 14px;
   width: 52px;
   height: 52px;
+  cursor: pointer;
 
-  path,
-  rect {
+  svg {
     fill: #b5b9be;
   }
 }
 
 .editor__toggle:hover {
-  path,
-  rect {
+  svg {
     fill: #8d949b;
   }
 }
 
 .editor__toggle--active {
-  path,
-  rect {
+  svg {
+    fill: $secondary-color;
+  }
+}
+
+.editor__toggle--active:hover {
+  svg {
     fill: $secondary-color;
   }
 }
@@ -116,29 +120,25 @@
     flex-grow: 1;
   }
 
-  .editor__range-wrapper {
+  .editor__range-wrapper,
+  .editor__range-wrapper:first-of-type {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid rgba(#000000, 0.1);
     padding-bottom: 24px;
     margin-bottom: 25px;
+    padding-right: 18px;
 
-    path,
-    rect {
+    svg {
       fill: $secondary-color;
     }
-  }
-
-  .editor__range-wrapper:first-of-type {
-    display: flex;
-    justify-content: flex-start;
   }
 
   .editor__range-wrapper svg {
     display: inline-block;
     width: 22px;
     height: 22px;
-    margin-right: 30px;
   }
 
   .editor__divider {
@@ -188,15 +188,27 @@
     max-width: 100%;
   }
 
-  .editor__range-wrapper {
+  .editor__range-wrapper,
+  .editor__range-wrapper:first-of-type {
     padding-bottom: 11px;
     margin-bottom: 15px;
+    height: 44px;
+    padding-right: 30px;
   }
 
-  .editor__range-wrapper svg {
+  .editor__range-wrapper:nth-of-type(1) svg {
     width: 44px;
     height: 44px;
-    margin-right: 47px;
+  }
+
+  .editor__range-wrapper:nth-of-type(2) svg {
+    width: 48px;
+    height: 51px;
+  }
+
+  .editor__range-wrapper:nth-of-type(3) svg {
+    width: 42px;
+    height: 32px;
   }
 
   .editor__button:first-of-type {

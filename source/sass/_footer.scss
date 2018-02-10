@@ -11,16 +11,25 @@
   justify-content: space-around;
 }
 
-.footer__logo-link:hover .footer__logo-letter {
+.footer__logo-link {
+  fill: $primary-color;
+}
+
+.footer__logo-link:hover {
   fill: $secondary-color;
 }
 
 .footer__logo-link:active {
   opacity: 0.5;
+  fill: $primary-color;
+}
 
-  .footer__logo-letter {
-    fill: $primary-color;
-  }
+.footer__logo--mob-tab {
+  display: block;
+}
+
+.footer__logo--desk {
+  display: none;
 }
 
 @media (min-width: $tablet-min-width) {
@@ -55,5 +64,13 @@
 
   .footer__logo {
     margin-top: -10px;
+  }
+
+  .footer__logo--mob-tab {
+    display: none;
+  }
+
+  .footer__logo--desk {
+    display: block;
   }
 }

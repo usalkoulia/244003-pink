@@ -5,18 +5,20 @@
 @media (min-width: $tablet-min-width) {
   .research {
     display: block;
-    padding: 46px;
-    padding-left: 50%;
-    padding-right: 30px;
     margin-bottom: 37px;
+  }
+
+  .research__centering {
+    padding: 46px 30px 46px 50%;
     background-image: url("../img/icon-timer.svg");
     background-repeat: no-repeat;
     background-position: 21px 9px;
     background-size: 238px;
     position: relative;
+    padding-left: 50%;
   }
 
-  .research::before {
+  .research__centering::before {
     content: "24";
     width: 202px;
     height: 202px;
@@ -62,27 +64,26 @@
 @media (min-width: $desktop-min-width) {
   .research {
     background-color: $bg-color;
-    padding: 0;
-    padding-top: 137px;
-    min-height: 320px;
     margin-bottom: 0;
-    background-position: 131px 44px;
-    background-size: 300px;
   }
 
-  .research::before {
+  .research__centering::before {
     width: 253px;
     height: 253px;
     font-size: 120px;
     border: 16px solid $secondary-color;
-    left: 153px;
+    left: 35px;
     top: 113px;
     line-height: 208px;
   }
 
   .research__centering {
     @include desktop-centering;
+    padding-top: 137px;
+    padding-bottom: 112px;
     padding-left: 376px;
+    background-position: 10px 44px;
+    background-size: 300px;
   }
 
   .research__title {
