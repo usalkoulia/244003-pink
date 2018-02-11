@@ -78,7 +78,7 @@ gulp.task("clean", function () {
 });
 
 gulp.task("sprite", function() {
-  return gulp.src("source/img/icon-*.svg")
+  return gulp.src("source/img/*.svg")
     .pipe(svgstore({
       inlineSvg: true
     }))
@@ -88,8 +88,8 @@ gulp.task("sprite", function() {
 
 gulp.task("html", function() {
   return gulp.src("source/*.html")
-   .pipe(posthtml([
+    .pipe(posthtml([
       include()
-   ]))
-   .pipe(gulp.dest("build"));
+    ]))
+    .pipe(gulp.dest("build"));
 });
