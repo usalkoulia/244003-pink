@@ -46,6 +46,14 @@
     }
   }
 
+  .slider__button:hover svg {
+    fill: #7e868f;
+  }
+
+  .slider__button:active svg {
+    fill: #e9ebec;
+  }
+
   .slider__button--prev {
     left: 0;
   }
