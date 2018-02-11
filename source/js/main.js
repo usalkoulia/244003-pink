@@ -4,6 +4,9 @@ var header = document.querySelector(".header");
 var slider_button = document.querySelector(".slider__button");
 var slider_item = document.querySelector(".slider__item");
 
+header.classList.remove("header--active");
+header_toggle.classList.add("header__menu-toggle--active");
+
 header_toggle.addEventListener("click", function(evt) {
   evt.preventDefault();
   if (header.classList.contains("header--active")) {
