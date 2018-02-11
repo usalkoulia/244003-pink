@@ -123,6 +123,7 @@
     width: 25%;
     padding: 13px 16px;
     background-position: center;
+    height: 46px;
   }
 
   .packages__cell-text {
@@ -132,7 +133,8 @@
   .packages__cell--heading {
     text-align: center;
     font-size: 16px;
-    padding: 14px 20px 12px 20px;
+    padding: 20px 20px 13px 20px;
+    height: auto;
   }
 
   .packages__cell--heading:nth-of-type(2) {
@@ -149,12 +151,13 @@
     text-transform: none;
     width: 114px;
     border: 2px solid #e5e5e5;
+    height: auto;
   }
 
   .packages__price {
     font-size: 18px;
     display: block;
-    padding-top: 6px;
+    margin-top: 8px;
   }
 
   .packages__toggles {
@@ -179,10 +182,11 @@
 
   .packages__cell {
     font-size: 18px;
-    padding: 17px 20px;
+    padding: 22px 20px 23px 20px;
   }
 
   .packages__price {
     font-size: 24px;
+    margin-top: 13px;
   }
 }
