@@ -145,7 +145,6 @@
   font-family: $main-font;
   color: $primary-color;
   font-size: 18px;
-  line-height: 30px;
 }
 
 @media (min-width: $tablet-min-width) {
@@ -385,6 +384,10 @@
   .competition-form__label--checkbox:nth-of-type(6) {
     order: 6;
     width: 240px;
+  }
+
+  .competition-form__input {
+    height: 63px;
   }
 
   .competition-form__textarea {

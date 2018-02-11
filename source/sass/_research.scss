@@ -59,6 +59,14 @@
     font-size: 14px;
     color: $secondary-color;
   }
+
+  .research__link:hover {
+    color: $primary-color;
+  }
+
+  .research__link:active {
+    color: rgba($primary-color, 0.3);
+  }
 }
 
 @media (min-width: $desktop-min-width) {

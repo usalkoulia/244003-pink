@@ -37,6 +37,11 @@
   background: none;
   border: none;
   padding: 0;
+  display: none;
+}
+
+.header__menu-toggle--active {
+  display: inline-block;
 }
 
 .header__menu-icon--cross {
