@@ -54,5 +54,12 @@
     text-transform: none;
     font-weight: normal;
     border: none;
+    padding: 21px 0 10px 0;
+    margin-bottom: 11px;
+  }
+
+  .main-nav__item--active {
+    border-bottom: 2px solid #ffffff;
+    margin-bottom: 8px;
   }
 }

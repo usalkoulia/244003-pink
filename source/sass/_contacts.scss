@@ -29,8 +29,17 @@
   display: block;
   font-size: 24px;
   font-weight: 300;
-  color: #d22856;
+  color: $secondary-color;
   text-decoration: none;
+}
+
+.contacts__link:hover {
+  color: $primary-color;
+  text-decoration: underline;
+}
+
+.contacts__link:active {
+  color: rgba($primary-color, 0.3);
 }
 
 .contacts__map {

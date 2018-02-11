@@ -12,7 +12,8 @@
 }
 
 .packages__wrapper {
-  overflow: auto;
+  overflow-x: auto;
+  overflow-y: hidden;
   padding-bottom: 35px;
   display: flex;
   min-height: 320px;
@@ -35,12 +36,15 @@
 }
 
 .packages__cell {
-  width: 280px;
+  width: 320px;
   background-color: #ffffff;
   font-size: 14px;
+  line-height: 14px;
   text-transform: uppercase;
   padding: 20px;
   border: 2px solid #e5e5e5;
+  box-sizing: border-box;
+  height: 61px;
 }
 
 .packages__cell--heading {
@@ -48,6 +52,8 @@
   color: #ffffff;
   font-size: 18px;
   font-weight: bold;
+  height: 99px;
+  box-sizing: border-box;
 }
 
 .packages__cell--enabled {
@@ -64,15 +70,19 @@
 
 .packages__price {
   font-size: 24px;
+  line-height: 24px;
   font-weight: 300;
+  margin-top: 12px;
+  display: block;
 }
 
 .packages__row .packages__cell:first-child {
   position: absolute;
-  width: 150px;
+  width: 190px;
   left: 22px;
   border-right: none;
   border-left: none;
+  height: 63px;
 }
 
 .packages__row:nth-child(2) .packages__cell:first-child {

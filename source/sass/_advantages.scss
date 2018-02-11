@@ -120,10 +120,8 @@
   .advantages__slogan-wrapper {
     @include desktop-centering;
     text-align: center;
-    min-height: 321px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    padding-top: 67px;
+    padding-bottom: 75px;
   }
 
   .advantages__slogan {
@@ -149,11 +147,8 @@
   .advantages__item {
     text-align: center;
     width: 250px;
-    min-height: 585px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
     line-height: 30px;
+    padding-top: 359px;
   }
 
   .advantages__item:nth-child(1) {
