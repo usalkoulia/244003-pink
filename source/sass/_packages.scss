@@ -172,8 +172,10 @@
 
 @media (min-width: $desktop-min-width) {
   .packages {
-    padding-top: 146px;
+    padding-top: 148px;
     padding-bottom: 88px;
+    background-size: 200%;
+    background-position: center -28px;
   }
 
   .packages__wrapper {

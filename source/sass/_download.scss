@@ -1,5 +1,5 @@
 .download {
-  background: url("../img/iphone-hand-mobile@1x.png") no-repeat -2px 180px,
+  background: url("../img/iphone-hand-mobile@1x.png") no-repeat -2px 178px,
     url("../img/bg-back-mobile@1x.jpg") no-repeat 0 5px;
   background-color: #1d2631;
   background-size: 260px, 100%;
@@ -47,6 +47,14 @@
   line-height: 24px;
 }
 
+.download__link--android svg {
+  margin-right: 5px;
+}
+
+.download__link--microsoft svg {
+  margin-bottom: 1px;
+}
+
 @media (min-width: $tablet-min-width) {
   .download__wrapper {
     background-color: transparent;
@@ -58,6 +66,7 @@
   .download {
     background: url("../img/iphone-hand-tablet@1x.png") no-repeat -20px 185px,
       url("../img/bg-back-tablet@1x.jpg") no-repeat center 2px;
+    background-color: #1d2631;
     min-height: 730px;
     padding-top: 0;
     background-size: 700px, 1200px;
@@ -97,12 +106,13 @@
 @media (min-width: $desktop-min-width) {
   .download {
     min-height: 867px;
-    background: url("../img/iphone-hand-desktop@1x.png") no-repeat 146px 222px,
+    background: url("../img/iphone-hand-desktop@1x.png") no-repeat 26px 222px,
       url("../img/bg-back-desktop@1x.jpg") no-repeat center 14px;
     background-size: 1050px, 2560px;
+    background-color: #1d2631;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background: url("../img/iphone-hand-desktop@2x.png") no-repeat 146px 222px,
+      background: url("../img/iphone-hand-desktop@2x.png") no-repeat 26px 222px,
         url("../img/bg-back-desktop@2x.jpg") no-repeat center 14px;
       background-size: 1050px, 2560px;
     }
@@ -125,7 +135,15 @@
   }
 
   .download__list {
-    padding-top: 66px;
+    padding-top: 67px;
     padding-bottom: 52px;
+  }
+
+  .download__link--android svg {
+    margin-right: 5px;
+  }
+
+  .download__link--microsoft svg {
+    margin-bottom: 3px;
   }
 }
