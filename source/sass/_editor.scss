@@ -126,19 +126,44 @@
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid rgba(#000000, 0.1);
-    padding-bottom: 24px;
+    padding-bottom: 22px;
     margin-bottom: 25px;
     padding-right: 18px;
+    min-height: 24px;
 
     svg {
       fill: $secondary-color;
     }
   }
 
+  .editor__range-wrapper:nth-of-type(1) {
+    svg {
+      margin-top: -1px;
+      margin-left: -4px;
+    }
+  }
+
+  .editor__range-wrapper:nth-of-type(2) {
+    svg {
+      margin-left: -2px;
+      margin-top: 2px;
+      margin-bottom: -2px;
+    }
+  }
+
+  .editor__range-wrapper:nth-of-type(3) {
+    svg {
+      width: 16px;
+      height: 16px;
+      margin-left: 3px;
+      margin-top: -4px;
+    }
+  }
+
   .editor__range-wrapper svg {
     display: inline-block;
-    width: 22px;
-    height: 22px;
+    width: 24px;
+    height: 24px;
   }
 
   .editor__divider {
@@ -199,6 +224,8 @@
   .editor__range-wrapper:nth-of-type(1) svg {
     width: 44px;
     height: 44px;
+    margin-top: -4px;
+    margin-left: -1px;
   }
 
   .editor__range-wrapper:nth-of-type(2) svg {
@@ -209,6 +236,7 @@
   .editor__range-wrapper:nth-of-type(3) svg {
     width: 42px;
     height: 32px;
+    margin-left: 0;
   }
 
   .editor__button:first-of-type {

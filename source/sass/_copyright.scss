@@ -23,6 +23,12 @@
   fill: #bec2c7;
 }
 
+@media (min-width: $tablet-min-width) {
+  .copyright__link {
+    margin-top: 6px;
+  }
+}
+
 @media (min-width: $desktop-min-width) {
   .copyright__text {
     font-size: 18px;

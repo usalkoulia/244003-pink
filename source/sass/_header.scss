@@ -115,6 +115,10 @@
   .header__logo--desk {
     display: none;
   }
+
+  .header__menu-icon--cross {
+    margin-top: 5px;
+  }
 }
 
 @media (min-width: $desktop-min-width) {

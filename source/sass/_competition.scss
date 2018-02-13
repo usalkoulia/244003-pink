@@ -210,7 +210,7 @@
 
   .competition-form__label--reversed {
     flex-direction: column-reverse;
-    align-items: left;
+    align-items: flex-start;
     margin-bottom: 35px;
 
     .competition-form__text {
@@ -277,7 +277,8 @@
 
 @media (min-width: $desktop-min-width) {
   .competition-form__promo {
-    padding: 92px 200px 85px 200px;
+    @include desktop-centering;
+    padding: 92px 100px 85px 100px;
   }
 
   .competition-form__fieldsets {

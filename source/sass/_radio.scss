@@ -8,10 +8,6 @@
   }
 }
 
-.radio__input {
-  display: none;
-}
-
 .radio__icon {
   width: 39px;
   height: 39px;
@@ -42,6 +38,10 @@
   position: absolute;
   left: 10px;
   top: 10px;
+}
+
+.radio__input:focus + .radio__icon {
+  box-shadow: 0 0 2px 2px #6495ed;
 }
 
 @media (min-width: $tablet-min-width) {
