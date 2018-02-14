@@ -112,7 +112,7 @@ gulp.task("compress", function (cb) {
 
 gulp.task("picturefill", function () {
   return gulp.src([
-    "node_modules/picturefill/dest/picturefill.min.js"
+    "node_modules/picturefill/dist/picturefill.min.js"
   ], {
     base: "node_modules/picturefill/dist"
   })
