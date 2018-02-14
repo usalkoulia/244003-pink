@@ -64,7 +64,7 @@ gulp.task("webp", function() {
 });
 
 gulp.task("build", function (done) {
-  run("clean", "copy", "style", "images", "webp", "sprite", "html", "compress", done);
+  run("clean", "copy", "picturefill", "style", "images", "webp", "sprite", "html", "compress", done);
 });
 
 gulp.task("copy", function () {
@@ -108,4 +108,13 @@ gulp.task("compress", function (cb) {
     ],
     cb
   );
+});
+
+gulp.task("picturefill", function () {
+  return gulp.src([
+    "node_modules/picturefill/dest/picturefill.min.js"
+  ], {
+    base: "node_modules/picturefill/dist"
+  })
+  .pipe(gulp.dest("build/js"));
 });
