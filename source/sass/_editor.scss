@@ -166,6 +166,18 @@
     height: 24px;
   }
 
+  .editor__range-wrapper:nth-child(1) .form-range__toggle {
+    left: 73%;
+  }
+
+  .editor__range-wrapper:nth-child(2) .form-range__toggle {
+    left: 13%;
+  }
+
+  .editor__range-wrapper:nth-child(3) .form-range__toggle {
+    left: 48%;
+  }
+
   .editor__divider {
     display: none;
   }
@@ -237,6 +249,18 @@
     width: 42px;
     height: 32px;
     margin-left: 0;
+  }
+
+  .editor__range-wrapper:nth-child(1) .form-range__toggle {
+    left: 25%;
+  }
+
+  .editor__range-wrapper:nth-child(2) .form-range__toggle {
+    left: 86%;
+  }
+
+  .editor__range-wrapper:nth-child(3) .form-range__toggle {
+    left: 56%;
   }
 
   .editor__button:first-of-type {
