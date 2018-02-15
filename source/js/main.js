@@ -6,9 +6,9 @@ var popup_submit = document.querySelector(".popup--submit");
 var popup_error = document.querySelector(".popup--error");
 var popup_button_error = document.querySelector(".popup__button--error");
 var popup_button_submit = document.querySelector(".popup__button--submit");
-var input_surname = document.querySelector(".competition-form__input--surname");
-var input_name = document.querySelector(".competition-form__input--name");
-var input_email = document.querySelector(".competition-form__input--email");
+var input_surname = document.querySelector("#input-surname");
+var input_name = document.querySelector("#input-name");
+var input_email = document.querySelector("#input-email");
 
 header.classList.remove("header--active");
 header_toggle.classList.add("header__menu-toggle--active");
