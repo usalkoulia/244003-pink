@@ -8,6 +8,7 @@
   margin: 0;
   padding: 0;
   border-top: 1px solid #000000;
+  flex-wrap: wrap;
 }
 
 .main-nav__item {
@@ -22,6 +23,7 @@
   border-top: 1px solid #485461;
   padding: 21px 0;
   box-sizing: border-box;
+  flex-shrink: 0;
 }
 
 .main-nav__link {
@@ -56,6 +58,10 @@
     border: none;
     padding: 21px 0 10px 0;
     margin-bottom: 11px;
+  }
+
+  .main-nav__item:not(:last-child) {
+    margin-right: 20px;
   }
 
   .main-nav__item--active {

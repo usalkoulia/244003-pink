@@ -124,7 +124,10 @@
 @media (min-width: $desktop-min-width) {
   .header {
     padding: 22px 0;
-    margin-bottom: -120px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
 
     .header__nav {
       display: block;
