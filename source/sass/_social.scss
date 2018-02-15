@@ -26,6 +26,15 @@
   opacity: 0.5;
 }
 
+.social__link--youtube svg {
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
+.social__link--facebook svg {
+  margin-bottom: 5px;
+}
+
 @media (min-width: $tablet-min-width) {
   .social__list {
     justify-content: center;
