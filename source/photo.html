@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Страница фотографий пользователей приложения Pink</title>
-    <link rel="preload" href="/fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font">
     <link rel="stylesheet" href="css/style.min.css">
     <script src="js/picturefill.min.js" async></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,13 +18,13 @@
       <div class="header__centering">
         <div class="header__wrapper">
           <a class="header__logo-link" href="index.html" aria-label="Логотип приложения Pink">
-            <svg class="header__logo--mob" width="74" height="23">
+            <svg class="header__logo-mob" width="74" height="23">
               <use xlink:href="#logo-pink-white-mobile"></use>
             </svg>
-            <svg class="header__logo--tab" width="146" height="40">
+            <svg class="header__logo-tab" width="146" height="40">
               <use xlink:href="#logo-pink-white-tablet"></use>
             </svg>
-            <svg class="header__logo--desk" width="146" height="40">
+            <svg class="header__logo-desk" width="146" height="40">
               <use xlink:href="#logo-pink-white-desktop"></use>
             </svg>
           </a>
@@ -76,7 +78,7 @@
 
                 <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
-                <img class="post__image" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@1x.jpg 1x, img/panorama-mobile@2x.jpg 2x" width="320" height="137" alt="Панорама">
+                <img class="post__image" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" width="320" height="137" alt="Панорама">
               </picture>
             </a>
             <div class="post__wrapper">
@@ -98,7 +100,7 @@
 
                 <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
-                <img class="post__image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@1x.jpg 1x, img/photo-car-mobile@2x.jpg 2x" width="280" height="180" alt="Белый автомобиль">
+                <img class="post__image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" width="280" height="180" alt="Белый автомобиль">
               </picture>
             </a>
             <div class="post__wrapper">
@@ -120,7 +122,7 @@
 
                 <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
-                <img class="post__image" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@1x.jpg 1x, img/photo-drumset-mobile@2x.jpg 2x" width="280" height="180" alt="Барабаны">
+                <img class="post__image" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" width="280" height="180" alt="Барабаны">
               </picture>
             </a>
             <div class="post__wrapper">
@@ -142,7 +144,7 @@
 
                 <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
-                <img class="post__image" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@1x.jpg 1x, img/photo-window-mobile@2x.jpg 2x" width="280" height="180" alt="Небо сквозь стеклянную крышу">
+                <img class="post__image" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" width="280" height="180" alt="Небо сквозь стеклянную крышу">
               </picture>
             </a>
             <div class="post__wrapper">
@@ -164,7 +166,7 @@
 
                 <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
-                <img class="post__image" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@1x.jpg 1x, img/photo-fair-mobile@2x.jpg 2x" width="280" height="180" alt="Кубанская бахча">
+                <img class="post__image" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" width="280" height="180" alt="Кубанская бахча">
               </picture>
             </a>
             <div class="post__wrapper">
@@ -186,7 +188,7 @@
 
                 <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
-                <img class="post__image" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@1x.jpg 1x, img/photo-pov-mobile@2x.jpg 2x" width="280" height="180" alt="Ноги в мокасинах">
+                <img class="post__image" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" width="280" height="180" alt="Ноги в мокасинах">
               </picture>
             </a>
             <div class="post__wrapper">
@@ -208,7 +210,7 @@
 
                 <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
-                <img class="post__image" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@1x.jpg 1x, img/photo-wing-mobile@2x.jpg 2x" width="280" height="180" alt="Крыло самолета на фоне рассвета">
+                <img class="post__image" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" width="280" height="180" alt="Крыло самолета на фоне рассвета">
               </picture>
             </a>
             <div class="post__wrapper">
@@ -234,7 +236,7 @@
 
             <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
             <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
-            <img class="editor__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@1x.jpg 1x, img/photo-road-mobile@2x.jpg 2x" width="280" height="374" alt="Зимний пейзаж">
+            <img class="editor__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" width="280" height="374" alt="Зимний пейзаж">
           </picture>
           <div class="editor__wrapper">
             <div class="editor__toggles">
@@ -300,10 +302,10 @@
       <div class="footer__wrapper">
         <div class="footer__logo">
           <a class="footer__logo-link" href="index.html" aria-label="Логотип приложения Pink">
-            <svg class="footer__logo--mob-tab" width="146" height="40">
+            <svg class="footer__logo-mob-tab" width="146" height="40">
               <use xlink:href="#logo-pink-blue-mobile"></use>
             </svg>
-            <svg class="footer__logo--desk" width="147" height="42">
+            <svg class="footer__logo-desk" width="147" height="42">
               <use xlink:href="#logo-pink-blue-desktop"></use>
             </svg>
           </a>
