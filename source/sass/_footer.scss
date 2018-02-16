@@ -25,11 +25,11 @@
   fill: $primary-color;
 }
 
-.footer__logo--mob-tab {
+.footer__logo-mob-tab {
   display: block;
 }
 
-.footer__logo--desk {
+.footer__logo-desk {
   display: none;
 }
 
@@ -71,11 +71,11 @@
     margin-top: -16px;
   }
 
-  .footer__logo--mob-tab {
+  .footer__logo-mob-tab {
     display: none;
   }
 
-  .footer__logo--desk {
+  .footer__logo-desk {
     display: block;
   }
 }
