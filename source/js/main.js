@@ -34,10 +34,10 @@ competition_form.addEventListener("submit", function(evt) {
 
 popup_button_error.addEventListener("click", function(evt) {
   evt.preventDefault();
-  popup_error.remove("popup--active");
+  popup_error.classList.remove("popup--active");
 });
 
 popup_button_submit.addEventListener("click", function(evt) {
   evt.preventDefault();
-  popup_submit.remove("popup--active");
+  popup_submit.classList.remove("popup--active");
 });
