@@ -8,8 +8,7 @@
 
 .editor__form {
   background-color: $bg-color;
-  padding: 20px;
-  padding-bottom: 41px;
+  padding: 21px 22px 41px 18px;
   text-align: center;
 }
 
@@ -82,8 +81,7 @@
   background-color: rgba(#000000, 0.1);
   height: 2px;
   border: none;
-  margin-top: 34px;
-  margin-bottom: 36px;
+  margin: 34px -22px 36px -18px;
 }
 
 @media (min-width: $tablet-min-width) {
@@ -101,8 +99,7 @@
 
   .editor__form {
     display: flex;
-    padding-top: 57px;
-    padding-bottom: 53px;
+    padding: 57px 20px 53px 20px;
   }
 
   .editor__toggles {
@@ -164,6 +161,18 @@
     display: inline-block;
     width: 24px;
     height: 24px;
+  }
+
+  .editor__range-wrapper:nth-child(1) .form-range__toggle {
+    left: 73%;
+  }
+
+  .editor__range-wrapper:nth-child(2) .form-range__toggle {
+    left: 13%;
+  }
+
+  .editor__range-wrapper:nth-child(3) .form-range__toggle {
+    left: 48%;
   }
 
   .editor__divider {
@@ -237,6 +246,18 @@
     width: 42px;
     height: 32px;
     margin-left: 0;
+  }
+
+  .editor__range-wrapper:nth-child(1) .form-range__toggle {
+    left: 25%;
+  }
+
+  .editor__range-wrapper:nth-child(2) .form-range__toggle {
+    left: 86%;
+  }
+
+  .editor__range-wrapper:nth-child(3) .form-range__toggle {
+    left: 56%;
   }
 
   .editor__button:first-of-type {

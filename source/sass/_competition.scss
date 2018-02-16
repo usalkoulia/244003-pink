@@ -113,6 +113,7 @@
   box-sizing: border-box;
   border: 2px solid rgba(#000000, 0.1);
   border-radius: 3px;
+  resize: vertical;
 }
 
 .competition-form__submit-wrapper {
@@ -355,6 +356,8 @@
 
   .competition-form__label--checkbox {
     margin-bottom: 43px;
+    order: 10;
+    width: 315px;
   }
 
   .competition-form__label--checkbox:nth-of-type(1) {
