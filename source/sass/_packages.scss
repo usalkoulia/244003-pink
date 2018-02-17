@@ -12,8 +12,7 @@
 }
 
 .packages__wrapper {
-  overflow-x: auto;
-  overflow-y: hidden;
+  overflow: hidden;
   padding-bottom: 35px;
   display: flex;
   min-height: 320px;
@@ -29,6 +28,7 @@
 }
 
 .packages__table {
+  margin-left: -279px;
   width: 280px * 3;
   flex-shrink: 0;
   font-family: $main-font;
@@ -107,7 +107,7 @@
 .packages__row .packages__cell:first-child {
   position: absolute;
   width: 190px;
-  left: 22px;
+  left: 23px;
   border-right: none;
   border-left: none;
   height: 63px;
@@ -139,6 +139,7 @@
 
   .packages__table {
     width: 100%;
+    transform: none;
   }
 
   .packages__wrapper {
