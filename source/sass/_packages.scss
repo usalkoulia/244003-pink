@@ -12,8 +12,7 @@
 }
 
 .packages__wrapper {
-  overflow-x: auto;
-  overflow-y: hidden;
+  overflow: hidden;
   padding-bottom: 35px;
   display: flex;
   min-height: 320px;
@@ -29,6 +28,7 @@
 }
 
 .packages__table {
+  transform: translateX(-279px);
   width: 280px * 3;
   flex-shrink: 0;
   font-family: $main-font;
@@ -107,22 +107,22 @@
 .packages__row .packages__cell:first-child {
   position: absolute;
   width: 190px;
-  left: 22px;
+  left: 283px;
   border-right: none;
   border-left: none;
   height: 63px;
 }
 
 .packages__row:nth-child(2) .packages__cell:first-child {
-  top: 189px;
+  top: 98px;
 }
 
 .packages__row:nth-child(3) .packages__cell:first-child {
-  top: 250px;
+  top: 159px;
 }
 
 .packages__row:nth-child(4) .packages__cell:first-child {
-  top: 311px;
+  top: 220px;
 }
 
 .packages__row:first-child .packages__cell:first-child {
@@ -139,6 +139,7 @@
 
   .packages__table {
     width: 100%;
+    transform: none;
   }
 
   .packages__wrapper {

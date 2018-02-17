@@ -54,24 +54,31 @@
   height: 52px;
   cursor: pointer;
 
+  // Каскад, разрешенный в критерии Д16
   svg {
     fill: #b5b9be;
   }
 }
 
 .editor__toggle:hover {
+
+  // Каскад, разрешенный в критерии Д16
   svg {
     fill: #8d949b;
   }
 }
 
 .editor__toggle--active {
+
+  // Каскад, разрешенный в критерии Д16
   svg {
     fill: $secondary-color;
   }
 }
 
 .editor__toggle--active:hover {
+
+  // Каскад, разрешенный в критерии Д16
   svg {
     fill: $secondary-color;
   }
@@ -128,12 +135,15 @@
     padding-right: 18px;
     min-height: 24px;
 
+    // Каскад, разрешенный в критерии Д16
     svg {
       fill: $secondary-color;
     }
   }
 
   .editor__range-wrapper:nth-of-type(1) {
+
+    // Каскад, разрешенный в критерии Д16
     svg {
       margin-top: -1px;
       margin-left: -4px;
@@ -141,6 +151,8 @@
   }
 
   .editor__range-wrapper:nth-of-type(2) {
+
+    // Каскад, разрешенный в критерии Д16
     svg {
       margin-left: -2px;
       margin-top: 2px;
@@ -149,6 +161,8 @@
   }
 
   .editor__range-wrapper:nth-of-type(3) {
+
+    // Каскад, разрешенный в критерии Д16
     svg {
       width: 16px;
       height: 16px;
