@@ -28,7 +28,7 @@
 }
 
 .packages__table {
-  transform: translateX(-279px);
+  margin-left: -279px;
   width: 280px * 3;
   flex-shrink: 0;
   font-family: $main-font;
@@ -107,22 +107,22 @@
 .packages__row .packages__cell:first-child {
   position: absolute;
   width: 190px;
-  left: 283px;
+  left: 23px;
   border-right: none;
   border-left: none;
   height: 63px;
 }
 
 .packages__row:nth-child(2) .packages__cell:first-child {
-  top: 98px;
+  top: 189px;
 }
 
 .packages__row:nth-child(3) .packages__cell:first-child {
-  top: 159px;
+  top: 250px;
 }
 
 .packages__row:nth-child(4) .packages__cell:first-child {
-  top: 220px;
+  top: 311px;
 }
 
 .packages__row:first-child .packages__cell:first-child {
