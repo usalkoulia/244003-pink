@@ -1647,7 +1647,9 @@
   color: #283645;
   width: 100%;
   margin-top: 11px;
-  outline: none; }
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none; }
   .competition-form__input:hover {
     border: 2px solid #283645; }
   .competition-form__input:focus {
